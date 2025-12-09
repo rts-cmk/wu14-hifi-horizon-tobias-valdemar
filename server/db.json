@@ -1,0 +1,2799 @@
+{
+	"categories": [
+		{
+			"id": 1,
+			"name": "shop_by_brand",
+			"products": [
+				"marantz",
+				"denon",
+				"yamaha",
+				"onkyo",
+				"pioneer",
+				"klipsch",
+				"bowers_wilkins",
+				"polk_audio",
+				"svs",
+				"elac",
+				"revel",
+				"pro_ject",
+				"cambridge_audio",
+				"bluesound",
+				"audioquest",
+				"sennheiser",
+				"sony"
+			]
+		},
+		{
+			"id": 2,
+			"name": "amplifiers",
+			"products": [
+				{
+					"id": 1,
+					"name": "Dayton Audio HTA100 Stereo Tube Amplifier",
+					"price": 199.99,
+					"discount_price": 1.99,
+					"image": "amplifier1.jpg",
+					"brand": "Dayton Audio",
+					"description": "Experience warm, rich sound with the Dayton Audio HTA100 stereo tube amplifier. Perfect for audiophiles seeking vintage audio quality.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 15,
+							"image": "amplifier1.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Dayton Audio",
+						"model_number": "HTA100",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.daytonaudio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"power_output": "50W per channel",
+						"frequency_response": "20Hz - 20kHz",
+						"total_harmonic_distortion": "<0.5%",
+						"damping_factor": "100",
+						"input_sensitivity": "200mV",
+						"signal_to_noise_ratio": ">90dB",
+						"dimensions": "12.5 x 10 x 4 inches",
+						"weight": "8 lbs"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Marantz PM6007 Integrated Amplifier",
+					"price": 599.99,
+					"discount_price": 549.99,
+					"image": "amplifier2.jpg",
+					"brand": "Marantz",
+					"description": "The Marantz PM6007 delivers audiophile-grade performance with built-in DAC and phono stage. Crystal-clear sound reproduction for the discerning listener.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 8,
+							"image": "amplifier2_black.jpg"
+						},
+						{
+							"color": "Silver Gold",
+							"stock": 12,
+							"image": "amplifier2_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Marantz",
+						"model_number": "PM6007",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.marantz.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"power_output": "45W per channel (8 ohms)",
+						"frequency_response": "10Hz - 70kHz",
+						"total_harmonic_distortion": "<0.02%",
+						"damping_factor": "200",
+						"input_sensitivity": "200mV",
+						"signal_to_noise_ratio": ">105dB",
+						"dimensions": "17.3 x 12.4 x 4.1 inches",
+						"weight": "18.1 lbs"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Cambridge Audio CXA81 Integrated Amplifier",
+					"price": 1299.99,
+					"discount_price": null,
+					"image": "amplifier3.jpg",
+					"brand": "Cambridge Audio",
+					"description": "The CXA81 combines 80 watts per channel with an ESS Sabre DAC for exceptional clarity. Bluetooth aptX HD connectivity and premium build quality.",
+					"variants": [
+						{
+							"color": "Lunar Grey",
+							"stock": 6,
+							"image": "amplifier3_grey.jpg"
+						},
+						{
+							"color": "Black",
+							"stock": 4,
+							"image": "amplifier3_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Cambridge Audio",
+						"model_number": "CXA81",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.cambridgeaudio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"power_output": "80W per channel (8 ohms)",
+						"frequency_response": "5Hz - 60kHz",
+						"total_harmonic_distortion": "<0.002%",
+						"damping_factor": "300",
+						"input_sensitivity": "300mV",
+						"signal_to_noise_ratio": ">108dB",
+						"dimensions": "16.9 x 13.5 x 4.6 inches",
+						"weight": "20.3 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Yamaha A-S801 Stereo Amplifier",
+					"price": 899.99,
+					"discount_price": 849.99,
+					"image": "amplifier4.jpg",
+					"brand": "Yamaha",
+					"description": "Yamaha's A-S801 features their legendary ToP-ART design with USB DAC functionality. Pure Direct mode bypasses tone controls for purist listening.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 10,
+							"image": "amplifier4_black.jpg"
+						},
+						{
+							"color": "Silver",
+							"stock": 7,
+							"image": "amplifier4_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Yamaha",
+						"model_number": "A-S801",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.yamaha.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"power_output": "100W per channel (8 ohms)",
+						"frequency_response": "10Hz - 100kHz",
+						"total_harmonic_distortion": "<0.019%",
+						"damping_factor": "240",
+						"input_sensitivity": "200mV",
+						"signal_to_noise_ratio": ">99dB",
+						"dimensions": "17.1 x 15.2 x 6.1 inches",
+						"weight": "22.5 lbs"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Denon PMA-1700NE Premium Integrated Amplifier",
+					"price": 1699.99,
+					"discount_price": null,
+					"image": "amplifier5.jpg",
+					"brand": "Denon",
+					"description": "The PMA-1700NE represents Denon's commitment to high-fidelity audio. Advanced AL32 Processing and Ultra High Current power amplifier deliver stunning dynamics.",
+					"variants": [
+						{
+							"color": "Premium Silver",
+							"stock": 3,
+							"image": "amplifier5_silver.jpg"
+						},
+						{
+							"color": "Graphite Black",
+							"stock": 5,
+							"image": "amplifier5_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Denon",
+						"model_number": "PMA-1700NE",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.denon.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"power_output": "140W per channel (4 ohms)",
+						"frequency_response": "5Hz - 100kHz",
+						"total_harmonic_distortion": "<0.01%",
+						"damping_factor": "400",
+						"input_sensitivity": "155mV",
+						"signal_to_noise_ratio": ">107dB",
+						"dimensions": "17.1 x 15.1 x 5.9 inches",
+						"weight": "26.9 lbs"
+					}
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "speakers",
+			"products": [
+				{
+					"id": 1,
+					"name": "Klipsch RP-600M II Bookshelf Speakers",
+					"price": 699.99,
+					"discount_price": 599.99,
+					"image": "speakers1.jpg",
+					"brand": "Klipsch",
+					"description": "The RP-600M II features Klipsch's signature Tractrix horn-loaded tweeter and Cerametallic woofer. Exceptional detail and dynamic range in a compact package.",
+					"variants": [
+						{
+							"color": "Ebony",
+							"stock": 20,
+							"image": "speakers1_ebony.jpg"
+						},
+						{
+							"color": "Walnut",
+							"stock": 15,
+							"image": "speakers1_walnut.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Klipsch",
+						"model_number": "RP-600M II",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.klipsch.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "45Hz - 25kHz",
+						"sensitivity": "96dB",
+						"power_handling": "100W continuous",
+						"impedance": "8 ohms",
+						"crossover_frequency": "1800Hz",
+						"driver_size": "6.5 inch woofer, 1 inch tweeter",
+						"dimensions": "15.7 x 8.0 x 10.7 inches",
+						"weight": "17.6 lbs each"
+					}
+				},
+				{
+					"id": 2,
+					"name": "ELAC Debut 2.0 B6.2 Bookshelf Speakers",
+					"price": 349.99,
+					"discount_price": 299.99,
+					"image": "speakers2.jpg",
+					"brand": "ELAC",
+					"description": "Designed by legendary engineer Andrew Jones, the Debut 2.0 B6.2 delivers audiophile performance at an accessible price. Natural, accurate sound reproduction.",
+					"variants": [
+						{
+							"color": "Black Ash",
+							"stock": 25,
+							"image": "speakers2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "ELAC",
+						"model_number": "DB62-BK",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.elac.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "44Hz - 35kHz",
+						"sensitivity": "87dB",
+						"power_handling": "120W",
+						"impedance": "6 ohms",
+						"crossover_frequency": "2700Hz",
+						"driver_size": "6.5 inch aramid-fiber woofer, 1 inch cloth dome tweeter",
+						"dimensions": "14.76 x 7.68 x 10.55 inches",
+						"weight": "14.33 lbs each"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Bowers & Wilkins 606 S3 Bookshelf Speakers",
+					"price": 899.99,
+					"discount_price": null,
+					"image": "speakers3.jpg",
+					"brand": "Bowers & Wilkins",
+					"description": "The 606 S3 features B&W's Continuum cone technology derived from their flagship 800 Series. Studio-quality sound in a home-friendly design.",
+					"variants": [
+						{
+							"color": "Matte Black",
+							"stock": 8,
+							"image": "speakers3_black.jpg"
+						},
+						{
+							"color": "Oak",
+							"stock": 6,
+							"image": "speakers3_oak.jpg"
+						},
+						{
+							"color": "Matte White",
+							"stock": 4,
+							"image": "speakers3_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Bowers & Wilkins",
+						"model_number": "606 S3",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.bowerswilkins.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "40Hz - 33kHz",
+						"sensitivity": "88dB",
+						"power_handling": "120W",
+						"impedance": "8 ohms",
+						"crossover_frequency": "3000Hz",
+						"driver_size": "6.5 inch Continuum cone, 1 inch decoupled double dome tweeter",
+						"dimensions": "13.5 x 7.5 x 11.8 inches",
+						"weight": "15.2 lbs each"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Polk Audio Reserve R200 Bookshelf Speakers",
+					"price": 599.99,
+					"discount_price": 549.99,
+					"image": "speakers4.jpg",
+					"brand": "Polk Audio",
+					"description": "The Reserve R200 combines Polk's turbine cone technology with X-Port bass enhancement for room-filling sound. Premium construction meets acoustic excellence.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 12,
+							"image": "speakers4_black.jpg"
+						},
+						{
+							"color": "Brown Walnut",
+							"stock": 8,
+							"image": "speakers4_walnut.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Polk Audio",
+						"model_number": "R200",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.polkaudio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "42Hz - 50kHz",
+						"sensitivity": "88dB",
+						"power_handling": "150W",
+						"impedance": "8 ohms",
+						"crossover_frequency": "2200Hz",
+						"driver_size": "6.5 inch turbine cone, 1 inch Pinnacle ring radiator tweeter",
+						"dimensions": "14.0 x 8.0 x 12.5 inches",
+						"weight": "18.5 lbs each"
+					}
+				},
+				{
+					"id": 5,
+					"name": "KEF Q150 Bookshelf Speakers",
+					"price": 549.99,
+					"discount_price": 449.99,
+					"image": "speakers5.jpg",
+					"brand": "KEF",
+					"description": "The Q150 features KEF's signature Uni-Q driver array placing the tweeter in the acoustic center of the woofer. Expansive, room-filling sound from any position.",
+					"variants": [
+						{
+							"color": "Satin Black",
+							"stock": 18,
+							"image": "speakers5_black.jpg"
+						},
+						{
+							"color": "Satin White",
+							"stock": 14,
+							"image": "speakers5_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "KEF",
+						"model_number": "Q150",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.kef.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "51Hz - 28kHz",
+						"sensitivity": "86dB",
+						"power_handling": "100W",
+						"impedance": "8 ohms",
+						"crossover_frequency": "2400Hz",
+						"driver_size": "5.25 inch Uni-Q driver with 1 inch vented aluminum dome HF",
+						"dimensions": "11.9 x 7.1 x 10.9 inches",
+						"weight": "12.8 lbs each"
+					}
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "floorstanding_speakers",
+			"products": [
+				{
+					"id": 1,
+					"name": "Klipsch RP-8000F II Floorstanding Speakers",
+					"price": 1499.99,
+					"discount_price": 1299.99,
+					"image": "floor_speakers1.jpg",
+					"brand": "Klipsch",
+					"description": "The RP-8000F II towers deliver powerful bass and crystal-clear highs with dual 8-inch woofers. Reference Premiere performance for immersive home audio.",
+					"variants": [
+						{
+							"color": "Ebony",
+							"stock": 6,
+							"image": "floor_speakers1_ebony.jpg"
+						},
+						{
+							"color": "Walnut",
+							"stock": 4,
+							"image": "floor_speakers1_walnut.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Klipsch",
+						"model_number": "RP-8000F II",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.klipsch.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "32Hz - 25kHz",
+						"sensitivity": "98dB",
+						"power_handling": "150W continuous",
+						"impedance": "8 ohms",
+						"crossover_frequency": "1600Hz",
+						"driver_size": "Dual 8 inch woofers, 1 inch titanium tweeter",
+						"dimensions": "43.2 x 10.7 x 17.9 inches",
+						"weight": "72.3 lbs each"
+					}
+				},
+				{
+					"id": 2,
+					"name": "SVS Prime Pinnacle Tower Speakers",
+					"price": 1999.99,
+					"discount_price": null,
+					"image": "floor_speakers2.jpg",
+					"brand": "SVS",
+					"description": "SVS Prime Pinnacle towers combine three dedicated bass drivers with a sophisticated crossover network. Thunderous bass and pinpoint imaging.",
+					"variants": [
+						{
+							"color": "Piano Gloss Black",
+							"stock": 4,
+							"image": "floor_speakers2_black.jpg"
+						},
+						{
+							"color": "Premium Black Ash",
+							"stock": 6,
+							"image": "floor_speakers2_ash.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "SVS",
+						"model_number": "Prime Pinnacle",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.svsound.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "29Hz - 25kHz",
+						"sensitivity": "88dB",
+						"power_handling": "300W",
+						"impedance": "8 ohms",
+						"crossover_frequency": "350Hz, 2200Hz",
+						"driver_size": "Triple 6.5 inch woofers, 1 inch aluminum dome tweeter",
+						"dimensions": "45.0 x 8.0 x 13.6 inches",
+						"weight": "56.0 lbs each"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Bowers & Wilkins 603 S3 Floorstanding Speakers",
+					"price": 1799.99,
+					"discount_price": 1699.99,
+					"image": "floor_speakers3.jpg",
+					"brand": "Bowers & Wilkins",
+					"description": "The 603 S3 features Continuum cone technology and Aerofoil Profile bass drivers. Decoupled tweeter-on-top design for pristine high frequencies.",
+					"variants": [
+						{
+							"color": "Matte Black",
+							"stock": 5,
+							"image": "floor_speakers3_black.jpg"
+						},
+						{
+							"color": "Oak",
+							"stock": 3,
+							"image": "floor_speakers3_oak.jpg"
+						},
+						{
+							"color": "Matte White",
+							"stock": 2,
+							"image": "floor_speakers3_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Bowers & Wilkins",
+						"model_number": "603 S3",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.bowerswilkins.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "28Hz - 33kHz",
+						"sensitivity": "88.5dB",
+						"power_handling": "200W",
+						"impedance": "8 ohms",
+						"crossover_frequency": "350Hz, 3000Hz",
+						"driver_size": "Dual 6.5 inch Aerofoil woofers, 6 inch Continuum midrange, 1 inch decoupled tweeter",
+						"dimensions": "40.4 x 7.6 x 13.0 inches",
+						"weight": "51.4 lbs each"
+					}
+				},
+				{
+					"id": 4,
+					"name": "ELAC Uni-Fi Reference UFR52 Floorstanding Speakers",
+					"price": 1399.99,
+					"discount_price": 1249.99,
+					"image": "floor_speakers4.jpg",
+					"brand": "ELAC",
+					"description": "Andrew Jones' Uni-Fi Reference series delivers exceptional performance. Concentric driver design and aluminum woofers provide accurate, detailed sound.",
+					"variants": [
+						{
+							"color": "Satin Black",
+							"stock": 7,
+							"image": "floor_speakers4_black.jpg"
+						},
+						{
+							"color": "Satin White",
+							"stock": 5,
+							"image": "floor_speakers4_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "ELAC",
+						"model_number": "UFR52",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.elac.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "38Hz - 35kHz",
+						"sensitivity": "85dB",
+						"power_handling": "140W",
+						"impedance": "6 ohms",
+						"crossover_frequency": "280Hz, 2700Hz",
+						"driver_size": "Triple 5.25 inch aluminum woofers, 4 inch concentric midrange/tweeter",
+						"dimensions": "40.0 x 7.7 x 11.1 inches",
+						"weight": "42.9 lbs each"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Revel Concerta2 F36 Floorstanding Speakers",
+					"price": 2000.00,
+					"discount_price": null,
+					"image": "floor_speakers5.jpg",
+					"brand": "Revel",
+					"description": "The F36 showcases Revel's legendary acoustic engineering. Three-way design with waveguide-mounted tweeter for exceptional clarity and imaging.",
+					"variants": [
+						{
+							"color": "High Gloss Black",
+							"stock": 3,
+							"image": "floor_speakers5_black.jpg"
+						},
+						{
+							"color": "High Gloss White",
+							"stock": 2,
+							"image": "floor_speakers5_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Revel",
+						"model_number": "F36",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.revelspeakers.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"frequency_response": "46Hz - 40kHz",
+						"sensitivity": "90dB",
+						"power_handling": "150W",
+						"impedance": "6 ohms",
+						"crossover_frequency": "450Hz, 2600Hz",
+						"driver_size": "Dual 6.5 inch aluminum woofers, 5.25 inch midrange, 1 inch aluminum dome tweeter",
+						"dimensions": "41.9 x 8.7 x 12.4 inches",
+						"weight": "47.0 lbs each"
+					}
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "turntables",
+			"products": [
+				{
+					"id": 1,
+					"name": "Pro-Ject Debut Carbon EVO Turntable",
+					"price": 599.99,
+					"discount_price": 549.99,
+					"image": "turntable1.jpg",
+					"brand": "Pro-Ject",
+					"description": "The Debut Carbon EVO represents the pinnacle of entry-level audiophile turntables. Carbon fiber tonearm and Sumiko Rainier cartridge deliver exceptional detail.",
+					"variants": [
+						{
+							"color": "Satin Black",
+							"stock": 12,
+							"image": "turntable1_black.jpg"
+						},
+						{
+							"color": "Satin White",
+							"stock": 8,
+							"image": "turntable1_white.jpg"
+						},
+						{
+							"color": "Satin Walnut",
+							"stock": 6,
+							"image": "turntable1_walnut.jpg"
+						},
+						{
+							"color": "Satin Green",
+							"stock": 4,
+							"image": "turntable1_green.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Pro-Ject",
+						"model_number": "Debut Carbon EVO",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.project-audio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"drive_type": "Belt drive",
+						"speeds": "33 1/3, 45 RPM",
+						"platter": "Steel with TPE damping",
+						"tonearm": "8.6 inch carbon fiber",
+						"cartridge": "Sumiko Rainier (pre-mounted)",
+						"wow_and_flutter": "<0.17%",
+						"signal_to_noise_ratio": "-68dB",
+						"dimensions": "16.3 x 12.0 x 4.6 inches",
+						"weight": "12.1 lbs"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Audio-Technica AT-LP120XUSB Direct Drive Turntable",
+					"price": 349.99,
+					"discount_price": 299.99,
+					"image": "turntable2.jpg",
+					"brand": "Audio-Technica",
+					"description": "Professional-grade direct-drive turntable with USB output for digitizing your vinyl collection. High-torque motor and adjustable anti-skate.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 25,
+							"image": "Pro_ject_Debut_3_bl.jpg"
+						},
+						{
+							"color": "Silver",
+							"stock": 18,
+							"image": "turntable2_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Audio-Technica",
+						"model_number": "AT-LP120XUSB",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.audio-technica.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"drive_type": "Direct drive",
+						"speeds": "33 1/3, 45, 78 RPM",
+						"platter": "Die-cast aluminum",
+						"tonearm": "S-shaped, adjustable height",
+						"cartridge": "AT-VM95E (pre-mounted)",
+						"wow_and_flutter": "<0.2%",
+						"signal_to_noise_ratio": "-50dB",
+						"dimensions": "17.8 x 13.9 x 6.3 inches",
+						"weight": "23.5 lbs"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Rega Planar 3 Turntable",
+					"price": 1095.00,
+					"discount_price": null,
+					"image": "turntable3.jpg",
+					"brand": "Rega",
+					"description": "The legendary Planar 3 with RB330 tonearm delivers world-class performance. Hand-assembled in England with precision-machined components.",
+					"variants": [
+						{
+							"color": "Gloss Black",
+							"stock": 5,
+							"image": "turntable3_black.jpg"
+						},
+						{
+							"color": "Gloss White",
+							"stock": 4,
+							"image": "turntable3_white.jpg"
+						},
+						{
+							"color": "Gloss Red",
+							"stock": 3,
+							"image": "turntable3_red.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Rega",
+						"model_number": "Planar 3",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.rega.co.uk",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"drive_type": "Belt drive",
+						"speeds": "33 1/3, 45 RPM",
+						"platter": "12mm float glass",
+						"tonearm": "RB330 precision tonearm",
+						"cartridge": "Elys 2 (optional)",
+						"wow_and_flutter": "<0.05%",
+						"signal_to_noise_ratio": "-72dB",
+						"dimensions": "17.6 x 14.0 x 4.1 inches",
+						"weight": "13.2 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Fluance RT85 Reference Turntable",
+					"price": 499.99,
+					"discount_price": 449.99,
+					"image": "turntable4.jpg",
+					"brand": "Fluance",
+					"description": "The RT85 features an acrylic platter and Ortofon 2M Blue cartridge for exceptional value. Belt drive with vibration isolation feet.",
+					"variants": [
+						{
+							"color": "Piano Black",
+							"stock": 10,
+							"image": "turntable4_black.jpg"
+						},
+						{
+							"color": "Natural Walnut",
+							"stock": 8,
+							"image": "turntable4_walnut.jpg"
+						},
+						{
+							"color": "Bamboo",
+							"stock": 5,
+							"image": "turntable4_bamboo.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Fluance",
+						"model_number": "RT85",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.fluance.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"drive_type": "Belt drive",
+						"speeds": "33 1/3, 45 RPM",
+						"platter": "Acrylic with rubber mat",
+						"tonearm": "S-type aluminum",
+						"cartridge": "Ortofon 2M Blue (pre-mounted)",
+						"wow_and_flutter": "<0.07%",
+						"signal_to_noise_ratio": "-74dB",
+						"dimensions": "16.5 x 13.75 x 4.5 inches",
+						"weight": "18.3 lbs"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Technics SL-1500C Direct Drive Turntable",
+					"price": 1199.99,
+					"discount_price": null,
+					"image": "turntable5.jpg",
+					"brand": "Technics",
+					"description": "Technics legendary direct drive returns with modern features. Coreless direct drive motor and built-in phono preamp for the ultimate vinyl experience.",
+					"variants": [
+						{
+							"color": "Silver",
+							"stock": 4,
+							"image": "turntable5_silver.jpg"
+						},
+						{
+							"color": "Black",
+							"stock": 3,
+							"image": "turntable5_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Technics",
+						"model_number": "SL-1500C",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.technics.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-6 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"drive_type": "Direct drive (coreless motor)",
+						"speeds": "33 1/3, 45, 78 RPM",
+						"platter": "Die-cast aluminum with deadening rubber",
+						"tonearm": "Gimbal suspension S-shaped",
+						"cartridge": "Ortofon 2M Red (pre-mounted)",
+						"wow_and_flutter": "<0.025%",
+						"signal_to_noise_ratio": "-78dB",
+						"dimensions": "17.8 x 14.2 x 5.8 inches",
+						"weight": "20.9 lbs"
+					}
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "cd_players",
+			"products": [
+				{
+					"id": 1,
+					"name": "Marantz CD6007 CD Player",
+					"price": 499.99,
+					"discount_price": 449.99,
+					"image": "cd_player1.jpg",
+					"brand": "Marantz",
+					"description": "The CD6007 features audiophile-grade DAC and HDAM technology. Play CDs with unmatched musicality and warmth.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 10,
+							"image": "cd_player1_black.jpg"
+						},
+						{
+							"color": "Silver Gold",
+							"stock": 8,
+							"image": "cd_player1_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Marantz",
+						"model_number": "CD6007",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.marantz.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "AKM AK4490 premium DAC",
+						"frequency_response": "2Hz - 20kHz",
+						"signal_to_noise_ratio": ">112dB",
+						"dynamic_range": ">100dB",
+						"total_harmonic_distortion": "<0.001%",
+						"disc_compatibility": "CD, CD-R, CD-RW",
+						"digital_outputs": "Optical, Coaxial",
+						"dimensions": "17.3 x 12.1 x 4.1 inches",
+						"weight": "14.6 lbs"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Cambridge Audio CXC V2 CD Transport",
+					"price": 599.99,
+					"discount_price": null,
+					"image": "cd_player2.jpg",
+					"brand": "Cambridge Audio",
+					"description": "Pure CD transport with dedicated servo mechanism. Pair with your DAC for the ultimate CD playback experience.",
+					"variants": [
+						{
+							"color": "Lunar Grey",
+							"stock": 6,
+							"image": "cd_player2_grey.jpg"
+						},
+						{
+							"color": "Black Edition",
+							"stock": 4,
+							"image": "cd_player2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Cambridge Audio",
+						"model_number": "CXC V2",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.cambridgeaudio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "Transport only (no DAC)",
+						"drive_mechanism": "Single-speed dedicated CD servo",
+						"disc_compatibility": "CD, CD-R, CD-RW",
+						"digital_outputs": "Optical TOSLINK, S/PDIF Coaxial",
+						"output_impedance": "75 ohms",
+						"jitter": "<130ps RMS",
+						"dimensions": "16.9 x 12.1 x 3.4 inches",
+						"weight": "11.7 lbs"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Yamaha CD-S303 CD Player",
+					"price": 399.99,
+					"discount_price": 349.99,
+					"image": "cd_player3.jpg",
+					"brand": "Yamaha",
+					"description": "The CD-S303 features Pure Direct mode and USB input for high-res audio files. Clean, precise CD playback at an accessible price.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 12,
+							"image": "cd_player3_black.jpg"
+						},
+						{
+							"color": "Silver",
+							"stock": 10,
+							"image": "cd_player3_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Yamaha",
+						"model_number": "CD-S303",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.yamaha.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "Burr-Brown 192kHz/24-bit DAC",
+						"frequency_response": "2Hz - 20kHz",
+						"signal_to_noise_ratio": ">110dB",
+						"dynamic_range": ">98dB",
+						"total_harmonic_distortion": "<0.003%",
+						"disc_compatibility": "CD, CD-R, CD-RW, MP3/WMA",
+						"digital_outputs": "Optical, Coaxial",
+						"dimensions": "17.1 x 12.0 x 3.7 inches",
+						"weight": "10.8 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Denon DCD-900NE CD Player",
+					"price": 699.99,
+					"discount_price": 649.99,
+					"image": "cd_player4.jpg",
+					"brand": "Denon",
+					"description": "Premium CD player with Advanced AL32 Processing for exceptional detail. SACD compatible for even higher resolution playback.",
+					"variants": [
+						{
+							"color": "Premium Silver",
+							"stock": 5,
+							"image": "cd_player4_silver.jpg"
+						},
+						{
+							"color": "Black",
+							"stock": 7,
+							"image": "cd_player4_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Denon",
+						"model_number": "DCD-900NE",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.denon.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "PCM1795 Advanced DAC with AL32",
+						"frequency_response": "2Hz - 50kHz",
+						"signal_to_noise_ratio": ">115dB",
+						"dynamic_range": ">106dB",
+						"total_harmonic_distortion": "<0.0008%",
+						"disc_compatibility": "CD, SACD, CD-R, CD-RW",
+						"digital_outputs": "Optical, Coaxial",
+						"dimensions": "17.1 x 13.3 x 4.6 inches",
+						"weight": "15.4 lbs"
+					}
+				},
+				{
+					"id": 5,
+					"name": "NAD C 538 CD Player",
+					"price": 449.99,
+					"discount_price": null,
+					"image": "cd_player5.jpg",
+					"brand": "NAD",
+					"description": "NAD's C 538 continues their tradition of musicality and value. Reference-quality DAC and analog stages for engaging sound.",
+					"variants": [
+						{
+							"color": "Graphite",
+							"stock": 8,
+							"image": "cd_player5_graphite.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "NAD",
+						"model_number": "C 538",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.nadelectronics.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "Wolfson WM8716 24-bit DAC",
+						"frequency_response": "20Hz - 20kHz",
+						"signal_to_noise_ratio": ">103dB",
+						"dynamic_range": ">96dB",
+						"total_harmonic_distortion": "<0.003%",
+						"disc_compatibility": "CD, CD-R, CD-RW",
+						"digital_outputs": "Coaxial",
+						"dimensions": "17.1 x 11.8 x 2.9 inches",
+						"weight": "10.1 lbs"
+					}
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "streamers",
+			"products": [
+				{
+					"id": 1,
+					"name": "Bluesound NODE Wireless Streamer",
+					"price": 599.99,
+					"discount_price": 549.99,
+					"image": "streamer1.jpg",
+					"brand": "Bluesound",
+					"description": "The NODE streams hi-res audio up to 24-bit/192kHz from all major services. Built-in DAC with HDMI eARC for TV audio.",
+					"variants": [
+						{
+							"color": "Matte Black",
+							"stock": 15,
+							"image": "streamer1_black.jpg"
+						},
+						{
+							"color": "Matte White",
+							"stock": 12,
+							"image": "streamer1_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Bluesound",
+						"model_number": "NODE",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.bluesound.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "32-bit/384kHz ESS Sabre",
+						"supported_formats": "FLAC, MQA, WAV, AIFF, MP3, AAC, OGG, WMA",
+						"max_resolution": "24-bit/192kHz",
+						"streaming_services": "Tidal, Qobuz, Spotify, Amazon Music, Deezer",
+						"connectivity": "WiFi, Ethernet, Bluetooth aptX HD",
+						"outputs": "RCA, Digital Coax, HDMI eARC, Headphone",
+						"dimensions": "8.7 x 5.7 x 1.8 inches",
+						"weight": "1.6 lbs"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Cambridge Audio CXN V2 Network Streamer",
+					"price": 1199.99,
+					"discount_price": null,
+					"image": "streamer2.jpg",
+					"brand": "Cambridge Audio",
+					"description": "The CXN V2 features dual ESS Sabre DACs and supports MQA full decoding. StreamMagic app provides seamless control.",
+					"variants": [
+						{
+							"color": "Lunar Grey",
+							"stock": 6,
+							"image": "streamer2_grey.jpg"
+						},
+						{
+							"color": "Black Edition",
+							"stock": 4,
+							"image": "streamer2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Cambridge Audio",
+						"model_number": "CXN V2",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.cambridgeaudio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "Dual ESS ES9018K2M Sabre DACs",
+						"supported_formats": "FLAC, WAV, AIFF, DSD64/128, MQA",
+						"max_resolution": "32-bit/384kHz, DSD256",
+						"streaming_services": "Tidal, Qobuz, Spotify Connect, Chromecast",
+						"connectivity": "WiFi, Ethernet, Bluetooth, USB",
+						"outputs": "Balanced XLR, RCA, Digital Coax, Optical",
+						"dimensions": "16.9 x 13.5 x 3.4 inches",
+						"weight": "11.7 lbs"
+					}
+				},
+				{
+					"id": 3,
+					"name": "WiiM Pro Plus Streaming DAC",
+					"price": 219.99,
+					"discount_price": 199.99,
+					"image": "streamer3.jpg",
+					"brand": "WiiM",
+					"description": "Audiophile streaming made affordable. AKM DAC with room correction and multiroom support.",
+					"variants": [
+						{
+							"color": "Space Gray",
+							"stock": 30,
+							"image": "streamer3_gray.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "WiiM",
+						"model_number": "Pro Plus",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.wiimhome.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "AKM AK4493SEQ",
+						"supported_formats": "FLAC, WAV, AIFF, DSD, MQA passthrough",
+						"max_resolution": "24-bit/192kHz, DSD64",
+						"streaming_services": "Tidal, Qobuz, Spotify, Amazon Music, AirPlay 2",
+						"connectivity": "WiFi, Ethernet, Bluetooth 5.1",
+						"outputs": "RCA, Digital Coax, Optical, Headphone",
+						"dimensions": "4.7 x 4.7 x 1.4 inches",
+						"weight": "0.55 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "NAD C 658 BluOS Streaming DAC",
+					"price": 1649.99,
+					"discount_price": 1499.99,
+					"image": "streamer4.jpg",
+					"brand": "NAD",
+					"description": "Complete streaming preamp with Dirac Live room correction. BluOS platform with MQA full decoder.",
+					"variants": [
+						{
+							"color": "Graphite",
+							"stock": 4,
+							"image": "streamer4_graphite.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "NAD",
+						"model_number": "C 658",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.nadelectronics.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-6 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "ESS Sabre ES9028",
+						"supported_formats": "FLAC, WAV, AIFF, DSD, MQA",
+						"max_resolution": "32-bit/384kHz, DSD128",
+						"streaming_services": "BluOS platform (Tidal, Qobuz, Spotify, etc.)",
+						"connectivity": "WiFi, Ethernet, Bluetooth aptX HD, USB",
+						"outputs": "Balanced XLR, RCA, Digital Coax, Subwoofer",
+						"dimensions": "17.0 x 15.5 x 2.6 inches",
+						"weight": "10.4 lbs"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Sonos Port Streaming Component",
+					"price": 449.99,
+					"discount_price": null,
+					"image": "streamer5.jpg",
+					"brand": "Sonos",
+					"description": "Add Sonos streaming to your existing hi-fi system. Line-in for vinyl integration and multi-room sync.",
+					"variants": [
+						{
+							"color": "Matte White",
+							"stock": 20,
+							"image": "streamer5_white.jpg"
+						},
+						{
+							"color": "Matte Black",
+							"stock": 18,
+							"image": "streamer5_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Sonos",
+						"model_number": "Port",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.sonos.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_type": "24-bit/48kHz",
+						"supported_formats": "MP3, AAC, FLAC, ALAC, WAV, AIFF, OGG",
+						"max_resolution": "24-bit/48kHz",
+						"streaming_services": "100+ streaming services via Sonos app",
+						"connectivity": "WiFi, Ethernet, AirPlay 2",
+						"outputs": "RCA, Digital Coax",
+						"dimensions": "5.4 x 5.4 x 1.6 inches",
+						"weight": "0.99 lbs"
+					}
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "cables",
+			"products": [
+				{
+					"id": 1,
+					"name": "AudioQuest Evergreen RCA Interconnect Cable",
+					"price": 59.99,
+					"discount_price": 49.99,
+					"image": "cable1.jpg",
+					"brand": "AudioQuest",
+					"description": "Entry-level audiophile interconnect with solid Long-Grain Copper conductors. Gold-plated connectors for reliable contact.",
+					"variants": [
+						{
+							"color": "Green",
+							"stock": 40,
+							"image": "cable1_green.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "AudioQuest",
+						"model_number": "Evergreen",
+						"warranty": "Lifetime",
+						"manufacturer_website": "https://www.audioquest.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"length": "1 meter (3.3 ft)",
+						"conductor_material": "Solid Long-Grain Copper (LGC)",
+						"connector_type": "RCA to RCA",
+						"connector_plating": "Gold-plated",
+						"shielding": "Metal-layer noise dissipation",
+						"jacket_material": "PVC",
+						"geometry": "Asymmetrical double-balanced",
+						"available_lengths": "0.5m, 1m, 1.5m, 2m, 3m"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Audioquest Carbon 48 HDMI Cable",
+					"price": 249.99,
+					"discount_price": null,
+					"image": "cable2.jpg",
+					"brand": "AudioQuest",
+					"description": "48Gbps HDMI cable with 10K/8K video support. Silver-plated conductors and eARC pass-through for premium home theater.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 15,
+							"image": "cable2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "AudioQuest",
+						"model_number": "Carbon 48",
+						"warranty": "Lifetime",
+						"manufacturer_website": "https://www.audioquest.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"length": "1.5 meters (5 ft)",
+						"conductor_material": "5% Silver-plated Solid Copper",
+						"bandwidth": "48Gbps",
+						"video_support": "8K/60Hz, 4K/120Hz, 10K",
+						"audio_support": "eARC, Dolby Atmos, DTS:X",
+						"hdmi_version": "HDMI 2.1",
+						"features": "Variable Refresh Rate, ALLM",
+						"available_lengths": "0.6m, 1m, 1.5m, 2m, 3m, 5m"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Wireworld Luna 8 Speaker Cable",
+					"price": 199.99,
+					"discount_price": 179.99,
+					"image": "cable3.jpg",
+					"brand": "Wireworld",
+					"description": "DNA Helix design minimizes electromagnetic interference. Oxygen-free copper with silver-clad connectors.",
+					"variants": [
+						{
+							"color": "Blue",
+							"stock": 12,
+							"image": "cable3_blue.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Wireworld",
+						"model_number": "Luna 8",
+						"warranty": "Lifetime",
+						"manufacturer_website": "https://www.wireworldcable.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"length": "2.5 meters (8 ft) pair",
+						"conductor_material": "OFC (Oxygen-Free Copper)",
+						"gauge": "14 AWG",
+						"connector_type": "Banana plugs",
+						"connector_plating": "Silver-clad",
+						"design": "DNA Helix geometry",
+						"jacket_material": "Composilex 3",
+						"available_lengths": "1.5m, 2m, 2.5m, 3m, 4m"
+					}
+				},
+				{
+					"id": 4,
+					"name": "BlueJeans Cable LC-1 Audio Cable",
+					"price": 39.95,
+					"discount_price": null,
+					"image": "cable4.jpg",
+					"brand": "BlueJeans Cable",
+					"description": "No-nonsense audiophile cable with Belden precision construction. Welded and soldered Canare connectors.",
+					"variants": [
+						{
+							"color": "Blue",
+							"stock": 50,
+							"image": "cable4_blue.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "BlueJeans Cable",
+						"model_number": "LC-1",
+						"warranty": "Lifetime",
+						"manufacturer_website": "https://www.bluejeanscable.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"length": "1 meter (3.3 ft)",
+						"conductor_material": "Bare copper braid + aluminum foil",
+						"connector_type": "RCA to RCA",
+						"connector_brand": "Canare",
+						"capacitance": "12.2 pF/ft",
+						"impedance": "75 ohms",
+						"shielding": "95% braid + 100% foil",
+						"available_lengths": "0.5m, 1m, 1.5m, 2m, 3m, 5m, 10m"
+					}
+				},
+				{
+					"id": 5,
+					"name": "AudioQuest Pearl USB Cable",
+					"price": 39.99,
+					"discount_price": 34.99,
+					"image": "cable5.jpg",
+					"brand": "AudioQuest",
+					"description": "Optimized for digital audio with separate data and power conductors. Hard-cell foam insulation for noise rejection.",
+					"variants": [
+						{
+							"color": "White",
+							"stock": 35,
+							"image": "cable5_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "AudioQuest",
+						"model_number": "Pearl",
+						"warranty": "Lifetime",
+						"manufacturer_website": "https://www.audioquest.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"length": "1.5 meters (5 ft)",
+						"conductor_material": "Solid Long-Grain Copper",
+						"connector_type": "USB-A to USB-B",
+						"connector_plating": "Gold-plated",
+						"insulation": "Hard-cell foam",
+						"design": "Separate data/power conductors",
+						"usb_version": "USB 2.0",
+						"available_lengths": "0.75m, 1.5m, 3m, 5m"
+					}
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "accessories",
+			"products": [
+				{
+					"id": 1,
+					"name": "AudioQuest Jitterbug FMJ USB Filter",
+					"price": 69.99,
+					"discount_price": 59.99,
+					"image": "accessory1.jpg",
+					"brand": "AudioQuest",
+					"description": "Full Metal Jacket USB noise filter reduces electrical noise and parasitic resonance. Improves digital audio clarity.",
+					"variants": [
+						{
+							"color": "Silver",
+							"stock": 25,
+							"image": "accessory1_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "AudioQuest",
+						"model_number": "Jitterbug FMJ",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.audioquest.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"connector_type": "USB-A male to USB-A female",
+						"function": "USB noise filter",
+						"material": "Full metal jacket construction",
+						"compatibility": "Any USB audio device",
+						"power_consumption": "None (passive)",
+						"dimensions": "2.4 x 0.7 x 0.4 inches",
+						"weight": "0.4 oz",
+						"stackable": "Yes"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Pro-Ject Vinyl Cleaner VC-E2",
+					"price": 499.99,
+					"discount_price": 449.99,
+					"image": "accessory2.jpg",
+					"brand": "Pro-Ject",
+					"description": "Compact record cleaning machine with bi-directional cleaning. Removes dust, dirt, and fingerprints for pristine playback.",
+					"variants": [
+						{
+							"color": "Silver",
+							"stock": 8,
+							"image": "accessory2_silver.jpg"
+						},
+						{
+							"color": "Black",
+							"stock": 6,
+							"image": "accessory2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Pro-Ject",
+						"model_number": "VC-E2",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.project-audio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"cleaning_method": "Vacuum suction, bi-directional",
+						"record_sizes": "7 inch, 10 inch, 12 inch",
+						"rotation_speed": "Manual",
+						"tank_capacity": "200ml",
+						"motor": "Vacuum motor 800W",
+						"dimensions": "13.8 x 8.7 x 5.9 inches",
+						"weight": "8.8 lbs",
+						"voltage": "110-120V / 60Hz"
+					}
+				},
+				{
+					"id": 3,
+					"name": "iFi Audio ZEN Air DAC",
+					"price": 99.99,
+					"discount_price": null,
+					"image": "accessory3.jpg",
+					"brand": "iFi Audio",
+					"description": "Desktop DAC with MQA decoding and analog warmth. True Native architecture for bit-perfect playback.",
+					"variants": [
+						{
+							"color": "Space Blue",
+							"stock": 18,
+							"image": "accessory3_blue.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "iFi Audio",
+						"model_number": "ZEN Air DAC",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.ifi-audio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"dac_chip": "Burr-Brown",
+						"max_resolution": "24-bit/384kHz, DSD256, MQA",
+						"inputs": "USB-B",
+						"outputs": "RCA, 6.3mm headphone",
+						"headphone_output": "280mW @ 32 ohms",
+						"signal_to_noise_ratio": ">113dB",
+						"dimensions": "4.6 x 3.9 x 1.3 inches",
+						"weight": "0.55 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "IsoAcoustics ISO-155 Speaker Stands",
+					"price": 129.99,
+					"discount_price": 119.99,
+					"image": "accessory4.jpg",
+					"brand": "IsoAcoustics",
+					"description": "Acoustic isolation stands for bookshelf speakers. Patented design decouples speakers from surfaces for clearer sound.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 20,
+							"image": "accessory4_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "IsoAcoustics",
+						"model_number": "ISO-155",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.isoacoustics.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"max_weight_capacity": "35 lbs per stand",
+						"platform_size": "6.1 x 5.0 inches",
+						"height_options": "3 heights included",
+						"tilt_options": "3 tilt angles",
+						"material": "High-density polymer",
+						"sold_as": "Pair",
+						"compatible_speakers": "Medium bookshelf/desktop speakers",
+						"dimensions": "6.1 x 5.0 x 3.1 inches each"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Furman SS-6B Power Strip",
+					"price": 49.99,
+					"discount_price": null,
+					"image": "accessory5.jpg",
+					"brand": "Furman",
+					"description": "Surge protection power strip with noise filtration. Metal housing and 6 widely-spaced outlets.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 30,
+							"image": "accessory5_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Furman",
+						"model_number": "SS-6B",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.furmanpower.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"outlets": "6 AC outlets",
+						"surge_protection": "MOV surge suppression",
+						"rfi_filtration": "EMI/RFI filtering",
+						"max_current": "15 amps",
+						"housing": "Heavy-duty steel",
+						"cord_length": "6 feet",
+						"dimensions": "12.25 x 3.5 x 1.75 inches",
+						"weight": "2.2 lbs"
+					}
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "headphones",
+			"products": [
+				{
+					"id": 1,
+					"name": "Sennheiser HD 660S2 Open-Back Headphones",
+					"price": 599.99,
+					"discount_price": 549.99,
+					"image": "headphone1.jpg",
+					"brand": "Sennheiser",
+					"description": "Second-generation audiophile headphones with refined transducers. Open-back design delivers natural soundstage and imaging.",
+					"variants": [
+						{
+							"color": "Matte Black",
+							"stock": 10,
+							"image": "headphone1_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Sennheiser",
+						"model_number": "HD 660S2",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.sennheiser.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_type": "Dynamic, open-back",
+						"driver_size": "38mm",
+						"frequency_response": "8Hz - 41.5kHz",
+						"impedance": "300 ohms",
+						"sensitivity": "104dB SPL/1V",
+						"total_harmonic_distortion": "<0.04%",
+						"cable_length": "1.8m (balanced 4.4mm), 3m (6.3mm)",
+						"weight": "260g"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Beyerdynamic DT 900 Pro X Headphones",
+					"price": 329.00,
+					"discount_price": 299.00,
+					"image": "headphone2.jpg",
+					"brand": "Beyerdynamic",
+					"description": "Studio reference headphones with STELLAR.45 drivers. Open design with velour ear pads for extended sessions.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 15,
+							"image": "headphone2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Beyerdynamic",
+						"model_number": "DT 900 Pro X",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.beyerdynamic.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_type": "Dynamic, open-back",
+						"driver_size": "45mm STELLAR.45",
+						"frequency_response": "5Hz - 40kHz",
+						"impedance": "48 ohms",
+						"sensitivity": "100dB SPL/1mW",
+						"max_spl": "118dB",
+						"cable_length": "3m coiled (extends to 5m)",
+						"weight": "345g"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Audio-Technica ATH-M50x Professional Headphones",
+					"price": 169.00,
+					"discount_price": 149.00,
+					"image": "headphone3.jpg",
+					"brand": "Audio-Technica",
+					"description": "Industry-standard professional monitor headphones. Closed-back design with exceptional clarity and bass.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 30,
+							"image": "headphone3_black.jpg"
+						},
+						{
+							"color": "White",
+							"stock": 15,
+							"image": "headphone3_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Audio-Technica",
+						"model_number": "ATH-M50x",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.audio-technica.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_type": "Dynamic, closed-back",
+						"driver_size": "45mm",
+						"frequency_response": "15Hz - 28kHz",
+						"impedance": "38 ohms",
+						"sensitivity": "99dB",
+						"max_input_power": "1600mW",
+						"cable_length": "1.2m-3m coiled, 3m straight, 1.2m straight",
+						"weight": "285g"
+					}
+				},
+				{
+					"id": 4,
+					"name": "HiFiMAN Sundara Planar Magnetic Headphones",
+					"price": 499.00,
+					"discount_price": 399.00,
+					"image": "headphone4.jpg",
+					"brand": "HiFiMAN",
+					"description": "Planar magnetic drivers deliver exceptional detail and speed. Sub-nanometer diaphragm technology for audiophile performance.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 8,
+							"image": "headphone4_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "HiFiMAN",
+						"model_number": "Sundara",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.hifiman.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_type": "Planar magnetic, open-back",
+						"driver_size": "Full-size planar",
+						"frequency_response": "6Hz - 75kHz",
+						"impedance": "37 ohms",
+						"sensitivity": "94dB",
+						"diaphragm": "Sub-nanometer",
+						"cable_length": "1.5m with 3.5mm",
+						"weight": "372g"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Sony WH-1000XM5 Wireless Headphones",
+					"price": 399.99,
+					"discount_price": 349.99,
+					"image": "headphone5.jpg",
+					"brand": "Sony",
+					"description": "Industry-leading noise cancellation with exceptional sound quality. 30-hour battery life and multipoint connection.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 25,
+							"image": "headphone5_black.jpg"
+						},
+						{
+							"color": "Silver",
+							"stock": 20,
+							"image": "headphone5_silver.jpg"
+						},
+						{
+							"color": "Midnight Blue",
+							"stock": 12,
+							"image": "headphone5_blue.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Sony",
+						"model_number": "WH-1000XM5",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.sony.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_type": "Dynamic, closed-back",
+						"driver_size": "30mm",
+						"frequency_response": "4Hz - 40kHz (wired), 20Hz - 20kHz (wireless)",
+						"impedance": "48 ohms (passive), 16 ohms (active)",
+						"noise_cancellation": "Active (8 microphones)",
+						"battery_life": "30 hours with ANC",
+						"bluetooth_codecs": "LDAC, AAC, SBC",
+						"weight": "250g"
+					}
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "home_cinema",
+			"products": [
+				{
+					"id": 1,
+					"name": "Denon AVR-X3800H 9.4 Channel AV Receiver",
+					"price": 1699.99,
+					"discount_price": 1499.99,
+					"image": "avr1.jpg",
+					"brand": "Denon",
+					"description": "9.4 channel receiver with 8K video and Dolby Atmos. HEOS multi-room built-in with Dirac Live room correction ready.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 6,
+							"image": "avr1_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Denon",
+						"model_number": "AVR-X3800H",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.denon.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-6 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"channels": "9.4",
+						"power_output": "105W per channel (8 ohms)",
+						"hdmi_inputs": "6 (all 8K/40Gbps)",
+						"hdmi_outputs": "3",
+						"surround_formats": "Dolby Atmos, DTS:X, IMAX Enhanced, Auro-3D",
+						"video_support": "8K/60Hz, 4K/120Hz, HDR10+, Dolby Vision",
+						"streaming": "HEOS, AirPlay 2, Spotify Connect",
+						"dimensions": "17.1 x 14.9 x 6.6 inches",
+						"weight": "26.5 lbs"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Marantz Cinema 70s 7.2 Channel AV Receiver",
+					"price": 1299.99,
+					"discount_price": null,
+					"image": "avr2.jpg",
+					"brand": "Marantz",
+					"description": "Slim-profile receiver with audiophile pedigree. HDAM circuitry and 8K processing in an elegant design.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 5,
+							"image": "avr2_black.jpg"
+						},
+						{
+							"color": "Silver Gold",
+							"stock": 4,
+							"image": "avr2_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Marantz",
+						"model_number": "Cinema 70s",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.marantz.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-6 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"channels": "7.2",
+						"power_output": "50W per channel (8 ohms)",
+						"hdmi_inputs": "6 (8K/40Gbps)",
+						"hdmi_outputs": "2",
+						"surround_formats": "Dolby Atmos, DTS:X, DTS Virtual:X",
+						"video_support": "8K/60Hz, 4K/120Hz, HDR10+, Dolby Vision",
+						"streaming": "HEOS, AirPlay 2, Spotify Connect",
+						"dimensions": "17.3 x 14.1 x 4.1 inches",
+						"weight": "20.7 lbs"
+					}
+				},
+				{
+					"id": 3,
+					"name": "SVS Prime 5.1 Speaker System",
+					"price": 1999.99,
+					"discount_price": 1799.99,
+					"image": "home_cinema3.jpg",
+					"brand": "SVS",
+					"description": "Complete 5.1 speaker package with devastating PB-1000 subwoofer. Reference-quality surround sound for movies and music.",
+					"variants": [
+						{
+							"color": "Premium Black Ash",
+							"stock": 4,
+							"image": "home_cinema3_black.jpg"
+						},
+						{
+							"color": "Piano Gloss Black",
+							"stock": 3,
+							"image": "home_cinema3_gloss.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "SVS",
+						"model_number": "Prime 5.1",
+						"warranty": "5 years (speakers), 5 years (subwoofer)",
+						"manufacturer_website": "https://www.svsound.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"package_includes": "2x Prime Bookshelf, 1x Prime Center, 2x Prime Satellite, 1x PB-1000",
+						"subwoofer_driver": "10 inch front-firing",
+						"subwoofer_power": "300W RMS, 700W peak",
+						"subwoofer_frequency": "19Hz - 270Hz",
+						"satellite_frequency": "69Hz - 25kHz",
+						"center_frequency": "59Hz - 25kHz",
+						"bookshelf_frequency": "48Hz - 25kHz",
+						"total_weight": "98 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Klipsch Reference Cinema System 5.1.4",
+					"price": 2499.99,
+					"discount_price": null,
+					"image": "home_cinema4.jpg",
+					"brand": "Klipsch",
+					"description": "Dolby Atmos speaker package with four elevation speakers. Tractrix horn technology for crystal-clear dialogue.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 3,
+							"image": "home_cinema4_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Klipsch",
+						"model_number": "Reference Cinema 5.1.4",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.klipsch.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"package_includes": "2x R-625FA Atmos Floor, 1x R-52C Center, 2x R-41M Surround, 1x R-120SW Subwoofer",
+						"atmos_speakers": "4 built-in elevation drivers",
+						"subwoofer_driver": "12 inch front-firing",
+						"subwoofer_power": "400W",
+						"floor_speaker_sensitivity": "97dB",
+						"center_sensitivity": "95dB",
+						"system_impedance": "8 ohms",
+						"total_weight": "142 lbs"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Sonos Arc Premium Smart Soundbar",
+					"price": 899.00,
+					"discount_price": 799.00,
+					"image": "soundbar1.jpg",
+					"brand": "Sonos",
+					"description": "Dolby Atmos soundbar with 11 high-performance drivers. TruePlay room tuning and seamless multi-room integration.",
+					"variants": [
+						{
+							"color": "Matte Black",
+							"stock": 12,
+							"image": "soundbar1_black.jpg"
+						},
+						{
+							"color": "Matte White",
+							"stock": 10,
+							"image": "soundbar1_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Sonos",
+						"model_number": "Arc",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.sonos.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"channels": "5.0.2",
+						"drivers": "11 Class-D amplified drivers",
+						"atmos_support": "Dolby Atmos, Dolby Digital Plus",
+						"connectivity": "HDMI eARC, WiFi, AirPlay 2",
+						"voice_assistants": "Amazon Alexa, Google Assistant",
+						"expandable": "Add Sub and surrounds",
+						"dimensions": "45.0 x 3.4 x 4.5 inches",
+						"weight": "13.8 lbs"
+					}
+				}
+			]
+		},
+		{
+			"id": 12,
+			"name": "outlet",
+			"products": [
+				{
+					"id": 1,
+					"name": "Denon AVR-S760H 7.2 Channel AV Receiver (Open Box)",
+					"price": 649.99,
+					"discount_price": 449.99,
+					"image": "outlet1.jpg",
+					"brand": "Denon",
+					"description": "Open box unit in excellent condition with full warranty. 7.2 channel receiver with 8K support and HEOS streaming.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 3,
+							"image": "outlet1_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Denon",
+						"model_number": "AVR-S760H",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.denon.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None",
+						"condition": "Open Box - Excellent"
+					},
+					"specifications": {
+						"channels": "7.2",
+						"power_output": "75W per channel (8 ohms)",
+						"hdmi_inputs": "6 (8K)",
+						"hdmi_outputs": "2",
+						"surround_formats": "Dolby Atmos, DTS:X",
+						"video_support": "8K/60Hz, 4K/120Hz",
+						"streaming": "HEOS, AirPlay 2",
+						"dimensions": "17.1 x 13.3 x 6.0 inches",
+						"weight": "19.2 lbs"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Klipsch R-51M Bookshelf Speakers (Refurbished)",
+					"price": 279.99,
+					"discount_price": 179.99,
+					"image": "outlet2.jpg",
+					"brand": "Klipsch",
+					"description": "Factory refurbished with 90-day warranty. Classic Klipsch sound at an unbeatable price.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 8,
+							"image": "outlet2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Klipsch",
+						"model_number": "R-51M",
+						"warranty": "90 days",
+						"manufacturer_website": "https://www.klipsch.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None",
+						"condition": "Factory Refurbished"
+					},
+					"specifications": {
+						"frequency_response": "62Hz - 21kHz",
+						"sensitivity": "93dB",
+						"power_handling": "85W peak",
+						"impedance": "8 ohms",
+						"driver_size": "5.25 inch woofer, 1 inch tweeter",
+						"crossover_frequency": "1700Hz",
+						"dimensions": "13.3 x 7.0 x 8.7 inches",
+						"weight": "9.3 lbs each"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Pro-Ject Debut Carbon DC Turntable (B-Stock)",
+					"price": 449.99,
+					"discount_price": 299.99,
+					"image": "outlet3.jpg",
+					"brand": "Pro-Ject",
+					"description": "Minor cosmetic imperfections, fully functional with 1-year warranty. Includes Ortofon 2M Red cartridge.",
+					"variants": [
+						{
+							"color": "Matte Black",
+							"stock": 4,
+							"image": "outlet3_black.jpg"
+						},
+						{
+							"color": "Piano Black",
+							"stock": 2,
+							"image": "outlet3_piano.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Pro-Ject",
+						"model_number": "Debut Carbon DC",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.project-audio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None",
+						"condition": "B-Stock - Minor Cosmetic Imperfections"
+					},
+					"specifications": {
+						"drive_type": "Belt drive",
+						"speeds": "33 1/3, 45 RPM",
+						"platter": "MDF with felt mat",
+						"tonearm": "8.6 inch carbon fiber",
+						"cartridge": "Ortofon 2M Red (pre-mounted)",
+						"wow_and_flutter": "<0.10%",
+						"signal_to_noise_ratio": "-68dB",
+						"dimensions": "16.3 x 12.0 x 4.6 inches",
+						"weight": "12.1 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Cambridge Audio AXA35 Integrated Amplifier (Demo Unit)",
+					"price": 449.99,
+					"discount_price": 349.99,
+					"image": "outlet4.jpg",
+					"brand": "Cambridge Audio",
+					"description": "Showroom demo unit in excellent condition. 35W per channel with built-in phono stage.",
+					"variants": [
+						{
+							"color": "Lunar Grey",
+							"stock": 2,
+							"image": "outlet4_grey.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Cambridge Audio",
+						"model_number": "AXA35",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.cambridgeaudio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None",
+						"condition": "Demo Unit - Excellent"
+					},
+					"specifications": {
+						"power_output": "35W per channel (8 ohms)",
+						"frequency_response": "5Hz - 50kHz",
+						"total_harmonic_distortion": "<0.01%",
+						"inputs": "4x RCA, 1x Phono MM, 1x 3.5mm",
+						"outputs": "Speaker A/B, Headphone, Sub out",
+						"phono_stage": "Moving Magnet (MM)",
+						"dimensions": "16.9 x 13.3 x 3.4 inches",
+						"weight": "13.7 lbs"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Sennheiser HD 560S Headphones (Open Box)",
+					"price": 199.95,
+					"discount_price": 149.95,
+					"image": "outlet5.jpg",
+					"brand": "Sennheiser",
+					"description": "Open box headphones with all accessories. Audiophile performance at an incredible price.",
+					"variants": [
+						{
+							"color": "Matte Black",
+							"stock": 5,
+							"image": "outlet5_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Sennheiser",
+						"model_number": "HD 560S",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.sennheiser.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None",
+						"condition": "Open Box - All Accessories"
+					},
+					"specifications": {
+						"driver_type": "Dynamic, open-back",
+						"driver_size": "38mm",
+						"frequency_response": "6Hz - 38kHz",
+						"impedance": "120 ohms",
+						"sensitivity": "110dB SPL/1V",
+						"total_harmonic_distortion": "<0.05%",
+						"cable_length": "3m with 6.3mm plug",
+						"weight": "240g"
+					}
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "ceiling_speakers",
+			"products": [
+				{
+					"id": 1,
+					"name": "Polk Audio RC80i In-Ceiling Speakers",
+					"price": 199.99,
+					"discount_price": 179.99,
+					"image": "ceiling1.jpg",
+					"brand": "Polk Audio",
+					"description": "8-inch moisture-resistant ceiling speakers with pivoting tweeter. Ideal for whole-home audio and bathrooms.",
+					"variants": [
+						{
+							"color": "White",
+							"stock": 20,
+							"image": "ceiling1_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Polk Audio",
+						"model_number": "RC80i",
+						"warranty": "Limited lifetime",
+						"manufacturer_website": "https://www.polkaudio.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_size": "8 inch dynamic balance woofer, 1 inch pivoting tweeter",
+						"frequency_response": "35Hz - 20kHz",
+						"power_handling": "100W",
+						"sensitivity": "90dB",
+						"impedance": "8 ohms",
+						"cutout_diameter": "9.625 inches",
+						"mounting_depth": "4.0 inches",
+						"sold_as": "Pair",
+						"moisture_resistant": "Yes"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Klipsch CDT-5650-C II In-Ceiling Speaker",
+					"price": 299.99,
+					"discount_price": null,
+					"image": "ceiling2.jpg",
+					"brand": "Klipsch",
+					"description": "Reference series in-ceiling with pivoting Tractrix horn tweeter. Cerametallic woofer for detailed, dynamic sound.",
+					"variants": [
+						{
+							"color": "White",
+							"stock": 12,
+							"image": "ceiling2_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Klipsch",
+						"model_number": "CDT-5650-C II",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.klipsch.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_size": "6.5 inch Cerametallic woofer, 1 inch pivoting titanium tweeter",
+						"frequency_response": "47Hz - 24kHz",
+						"power_handling": "75W RMS, 300W peak",
+						"sensitivity": "93dB",
+						"impedance": "8 ohms",
+						"cutout_diameter": "9.0 inches",
+						"mounting_depth": "4.1 inches",
+						"sold_as": "Each",
+						"moisture_resistant": "No"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Sonos In-Ceiling Speakers by Sonance",
+					"price": 599.00,
+					"discount_price": null,
+					"image": "ceiling3.jpg",
+					"brand": "Sonos",
+					"description": "Designed for Sonos Amp, these ceiling speakers deliver Trueplay-tuned audio. Easy installation with integrated dogleg clamps.",
+					"variants": [
+						{
+							"color": "White",
+							"stock": 10,
+							"image": "ceiling3_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Sonance (for Sonos)",
+						"model_number": "In-Ceiling 6",
+						"warranty": "3 years",
+						"manufacturer_website": "https://www.sonos.com",
+						"delivery_charge": "Free",
+						"delivery_time": "3-5 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_size": "6.5 inch woofer, 1 inch tweeter",
+						"frequency_response": "55Hz - 20kHz",
+						"power_handling": "90W",
+						"sensitivity": "87dB",
+						"impedance": "8 ohms",
+						"cutout_diameter": "8.125 inches",
+						"mounting_depth": "4.4 inches",
+						"sold_as": "Pair",
+						"moisture_resistant": "No"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Bowers & Wilkins CCM663 In-Ceiling Speaker",
+					"price": 399.99,
+					"discount_price": 349.99,
+					"image": "ceiling4.jpg",
+					"brand": "Bowers & Wilkins",
+					"description": "Premium in-ceiling with Nautilus tube-loaded tweeter technology. Glass fiber mid/bass driver for rich, detailed sound.",
+					"variants": [
+						{
+							"color": "White",
+							"stock": 6,
+							"image": "ceiling4_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Bowers & Wilkins",
+						"model_number": "CCM663",
+						"warranty": "5 years",
+						"manufacturer_website": "https://www.bowerswilkins.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-6 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_size": "6 inch glass fiber mid/bass, 1 inch Nautilus tube tweeter",
+						"frequency_response": "52Hz - 22kHz",
+						"power_handling": "80W",
+						"sensitivity": "87dB",
+						"impedance": "8 ohms",
+						"cutout_diameter": "8.3 inches",
+						"mounting_depth": "4.0 inches",
+						"sold_as": "Each",
+						"moisture_resistant": "No"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Yamaha NS-IW280C In-Ceiling Speakers",
+					"price": 149.99,
+					"discount_price": 129.99,
+					"image": "ceiling5.jpg",
+					"brand": "Yamaha",
+					"description": "High-performance ceiling speakers at an accessible price. PP mica cone and soft dome tweeter for natural sound.",
+					"variants": [
+						{
+							"color": "White",
+							"stock": 25,
+							"image": "ceiling5_white.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Yamaha",
+						"model_number": "NS-IW280C",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.yamaha.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"driver_size": "6.5 inch PP mica cone woofer, 1 inch soft dome tweeter",
+						"frequency_response": "60Hz - 24kHz",
+						"power_handling": "120W max",
+						"sensitivity": "88dB",
+						"impedance": "8 ohms",
+						"cutout_diameter": "8.0 inches",
+						"mounting_depth": "4.3 inches",
+						"sold_as": "Pair",
+						"moisture_resistant": "No"
+					}
+				}
+			]
+		},
+		{
+			"id": 14,
+			"name": "tvs",
+			"products": [
+				{
+					"id": 1,
+					"name": "LG C4 65-inch OLED 4K Smart TV",
+					"price": 1999.99,
+					"discount_price": 1799.99,
+					"image": "tv1.jpg",
+					"brand": "LG",
+					"description": "OLED evo technology with α9 AI Processor 4K Gen7. Perfect blacks, infinite contrast, and Dolby Vision/Atmos support.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 8,
+							"image": "tv1_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "LG",
+						"model_number": "OLED65C4PUA",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.lg.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"screen_size": "65 inches",
+						"resolution": "4K (3840 x 2160)",
+						"panel_type": "OLED evo",
+						"refresh_rate": "120Hz",
+						"hdr_formats": "Dolby Vision, HDR10, HLG",
+						"hdmi_ports": "4x HDMI 2.1 (48Gbps)",
+						"smart_platform": "webOS 24",
+						"gaming_features": "VRR, ALLM, G-Sync, FreeSync",
+						"dimensions": "57.0 x 32.7 x 1.8 inches",
+						"weight": "40.6 lbs"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Sony Bravia XR A95L 65-inch QD-OLED TV",
+					"price": 2799.99,
+					"discount_price": null,
+					"image": "tv2.jpg",
+					"brand": "Sony",
+					"description": "QD-OLED with Cognitive Processor XR. Exceptional brightness and color accuracy for movie enthusiasts.",
+					"variants": [
+						{
+							"color": "Titanium Silver",
+							"stock": 4,
+							"image": "tv2_silver.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Sony",
+						"model_number": "XR65A95L",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.sony.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"screen_size": "65 inches",
+						"resolution": "4K (3840 x 2160)",
+						"panel_type": "QD-OLED",
+						"refresh_rate": "120Hz",
+						"hdr_formats": "Dolby Vision, HDR10, HLG",
+						"hdmi_ports": "4x HDMI 2.1",
+						"smart_platform": "Google TV",
+						"gaming_features": "VRR, ALLM, Auto HDR Tone Mapping",
+						"dimensions": "56.8 x 33.2 x 2.1 inches",
+						"weight": "53.6 lbs"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Samsung S90D 55-inch OLED 4K Smart TV",
+					"price": 1499.99,
+					"discount_price": 1349.99,
+					"image": "tv3.jpg",
+					"brand": "Samsung",
+					"description": "OLED with Neural Quantum Processor 4K. Vibrant colors and deep blacks with Object Tracking Sound Lite.",
+					"variants": [
+						{
+							"color": "Graphite Black",
+							"stock": 10,
+							"image": "tv3_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Samsung",
+						"model_number": "QN55S90D",
+						"warranty": "1 year",
+						"manufacturer_website": "https://www.samsung.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-6 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"screen_size": "55 inches",
+						"resolution": "4K (3840 x 2160)",
+						"panel_type": "OLED",
+						"refresh_rate": "120Hz",
+						"hdr_formats": "HDR10+, HLG",
+						"hdmi_ports": "4x HDMI 2.1",
+						"smart_platform": "Tizen OS",
+						"gaming_features": "Gaming Hub, VRR, FreeSync Premium",
+						"dimensions": "48.3 x 28.0 x 1.6 inches",
+						"weight": "35.3 lbs"
+					}
+				},
+				{
+					"id": 4,
+					"name": "TCL QM8 75-inch Mini-LED 4K TV",
+					"price": 1699.99,
+					"discount_price": 1499.99,
+					"image": "tv4.jpg",
+					"brand": "TCL",
+					"description": "Flagship Mini-LED with 5000+ dimming zones. Exceptional value with premium picture quality and Google TV.",
+					"variants": [
+						{
+							"color": "Black",
+							"stock": 6,
+							"image": "tv4_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "TCL",
+						"model_number": "75QM850G",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.tcl.com",
+						"delivery_charge": "Free",
+						"delivery_time": "5-7 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"screen_size": "75 inches",
+						"resolution": "4K (3840 x 2160)",
+						"panel_type": "Mini-LED QLED",
+						"refresh_rate": "120Hz",
+						"hdr_formats": "Dolby Vision IQ, HDR10+, HLG",
+						"hdmi_ports": "4x HDMI 2.1",
+						"smart_platform": "Google TV",
+						"gaming_features": "Game Accelerator, VRR, ALLM",
+						"dimensions": "66.0 x 38.1 x 3.0 inches",
+						"weight": "71.2 lbs"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Hisense U8N 65-inch Mini-LED 4K TV",
+					"price": 1199.99,
+					"discount_price": 999.99,
+					"image": "tv5.jpg",
+					"brand": "Hisense",
+					"description": "Mini-LED with 144Hz refresh rate for gaming. Hi-View Engine and Dolby Vision for stunning picture quality.",
+					"variants": [
+						{
+							"color": "Dark Gray",
+							"stock": 12,
+							"image": "tv5_gray.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Hisense",
+						"model_number": "65U8N",
+						"warranty": "2 years",
+						"manufacturer_website": "https://www.hisense-usa.com",
+						"delivery_charge": "Free",
+						"delivery_time": "4-6 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"screen_size": "65 inches",
+						"resolution": "4K (3840 x 2160)",
+						"panel_type": "Mini-LED ULED",
+						"refresh_rate": "144Hz",
+						"hdr_formats": "Dolby Vision IQ, HDR10+, HLG",
+						"hdmi_ports": "2x HDMI 2.1, 2x HDMI 2.0",
+						"smart_platform": "Google TV",
+						"gaming_features": "144Hz VRR, Game Mode Pro, ALLM",
+						"dimensions": "56.9 x 32.7 x 2.8 inches",
+						"weight": "52.0 lbs"
+					}
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "vinyl_lps",
+			"products": [
+				{
+					"id": 1,
+					"name": "Pink Floyd - The Dark Side of the Moon (2023 Remaster)",
+					"price": 34.99,
+					"discount_price": 29.99,
+					"image": "vinyl1.jpg",
+					"brand": "Pink Floyd Records",
+					"description": "50th anniversary remaster on 180g vinyl. Iconic album with pristine audio quality and gatefold sleeve.",
+					"variants": [
+						{
+							"color": "Standard Black",
+							"stock": 25,
+							"image": "vinyl1_black.jpg"
+						},
+						{
+							"color": "Clear UV Picture Disc",
+							"stock": 10,
+							"image": "vinyl1_clear.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Pink Floyd Records/Sony Music",
+						"model_number": "PFR50TH",
+						"warranty": "N/A",
+						"manufacturer_website": "https://www.pinkfloyd.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"format": "12 inch LP",
+						"vinyl_weight": "180g",
+						"speed": "33 1/3 RPM",
+						"release_year": "2023 (Original 1973)",
+						"genre": "Progressive Rock",
+						"label": "Pink Floyd Records",
+						"tracks": "10 tracks",
+						"packaging": "Gatefold sleeve with poster and stickers"
+					}
+				},
+				{
+					"id": 2,
+					"name": "Fleetwood Mac - Rumours (2024 Remaster)",
+					"price": 29.99,
+					"discount_price": null,
+					"image": "vinyl2.jpg",
+					"brand": "Rhino Records",
+					"description": "One of the best-selling albums of all time. Mastered from original analog tapes on premium vinyl.",
+					"variants": [
+						{
+							"color": "Standard Black",
+							"stock": 30,
+							"image": "vinyl2_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Rhino Records/Warner Music",
+						"model_number": "R1-3010",
+						"warranty": "N/A",
+						"manufacturer_website": "https://www.fleetwoodmac.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"format": "12 inch LP",
+						"vinyl_weight": "180g",
+						"speed": "33 1/3 RPM",
+						"release_year": "2024 (Original 1977)",
+						"genre": "Rock",
+						"label": "Rhino Records",
+						"tracks": "11 tracks",
+						"packaging": "Single sleeve with printed inner"
+					}
+				},
+				{
+					"id": 3,
+					"name": "Miles Davis - Kind of Blue (Blue Note Classics)",
+					"price": 27.99,
+					"discount_price": 24.99,
+					"image": "vinyl3.jpg",
+					"brand": "Blue Note Records",
+					"description": "The essential jazz album. Analog cut from original masters for audiophile-quality sound.",
+					"variants": [
+						{
+							"color": "Standard Black",
+							"stock": 20,
+							"image": "vinyl3_black.jpg"
+						},
+						{
+							"color": "Blue Vinyl",
+							"stock": 8,
+							"image": "vinyl3_blue.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Blue Note Records/Universal",
+						"model_number": "BN-KOB-180",
+						"warranty": "N/A",
+						"manufacturer_website": "https://www.bluenote.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"format": "12 inch LP",
+						"vinyl_weight": "180g",
+						"speed": "33 1/3 RPM",
+						"release_year": "Blue Note Classics (Original 1959)",
+						"genre": "Jazz",
+						"label": "Blue Note Records",
+						"tracks": "5 tracks",
+						"packaging": "Single sleeve"
+					}
+				},
+				{
+					"id": 4,
+					"name": "Radiohead - OK Computer OKNOTOK 1997-2017",
+					"price": 44.99,
+					"discount_price": 39.99,
+					"image": "vinyl4.jpg",
+					"brand": "XL Recordings",
+					"description": "20th anniversary edition with 8 bonus tracks including B-sides and unreleased material. Triple LP on 180g vinyl.",
+					"variants": [
+						{
+							"color": "Standard Black (3LP)",
+							"stock": 12,
+							"image": "vinyl4_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "XL Recordings",
+						"model_number": "XLLP868",
+						"warranty": "N/A",
+						"manufacturer_website": "https://www.radiohead.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"format": "3x 12 inch LP",
+						"vinyl_weight": "180g each",
+						"speed": "33 1/3 RPM",
+						"release_year": "2017 (Original 1997)",
+						"genre": "Alternative Rock",
+						"label": "XL Recordings",
+						"tracks": "23 tracks",
+						"packaging": "Triple gatefold with hardcover book"
+					}
+				},
+				{
+					"id": 5,
+					"name": "Daft Punk - Random Access Memories (10th Anniversary)",
+					"price": 49.99,
+					"discount_price": null,
+					"image": "vinyl5.jpg",
+					"brand": "Columbia Records",
+					"description": "Expanded 10th anniversary edition with 9 bonus tracks. Triple LP featuring the Grammy-winning album.",
+					"variants": [
+						{
+							"color": "Standard Black (3LP)",
+							"stock": 15,
+							"image": "vinyl5_black.jpg"
+						}
+					],
+					"additional_info": {
+						"manufacturer": "Columbia Records/Sony",
+						"model_number": "19658790731",
+						"warranty": "N/A",
+						"manufacturer_website": "https://www.daftpunk.com",
+						"delivery_charge": "Free",
+						"delivery_time": "2-4 business days",
+						"card_surcharge": "None"
+					},
+					"specifications": {
+						"format": "3x 12 inch LP",
+						"vinyl_weight": "180g each",
+						"speed": "33 1/3 RPM",
+						"release_year": "2023 (Original 2013)",
+						"genre": "Electronic",
+						"label": "Columbia Records",
+						"tracks": "22 tracks",
+						"packaging": "Triple gatefold sleeve"
+					}
+				}
+			]
+		}
+	]
+}
