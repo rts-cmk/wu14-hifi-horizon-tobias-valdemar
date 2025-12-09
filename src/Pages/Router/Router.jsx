@@ -3,6 +3,8 @@ import Layout from "../../Components/Layout/Layout";
 import ErrorPage from "../ErrorPage";
 import Home from "../Home";
 import Shop from "../Shop";
+import AboutUs from "../About";
+import Contact from "../Contact";
 
 //Loaders
 import { loadFilters } from "../../loaders/filter_loader";
@@ -18,13 +20,17 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/brands",
-        element: <Brands />,
+        path: "/aboutus",
+        element: <AboutUs />,
       },
       {
         path: "/shop",
         element: <Shop />,
         loader: loadFilters,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
