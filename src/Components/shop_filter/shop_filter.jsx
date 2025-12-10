@@ -9,7 +9,7 @@ export default function ShopFilter() {
       <ShopFilterItem name="Brand" options={filters.brands} />
       <ShopFilterItem name="Color" options={filters.colors} />
       <ShopFilterItem
-        name="Price Range"
+        name="Price"
         type="range"
         priceRange={filters.priceRange}
       />
