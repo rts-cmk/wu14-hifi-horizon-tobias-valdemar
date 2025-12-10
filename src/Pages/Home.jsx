@@ -1,5 +1,11 @@
+import Newsletter from "../Components/Newsletter/Newsletter";
+
+import "../Styles/Home.sass"
+
 export default function Home() {
     return (
-        <div>Home</div>
+        <div className="home">
+            <Newsletter />    
+        </div>
     )
 }
