@@ -4,6 +4,10 @@
   display: flex;
   padding: vars.$default-padding-top-bottom vars.$default-padding-sides;
   gap: 2rem;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__shop-filters {
     width: 250px;

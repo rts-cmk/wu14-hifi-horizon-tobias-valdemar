@@ -26,11 +26,14 @@ export default function ProductCard({
           className="product-card__image"
           src={`${API_BASE_URL}/${image}`}
           alt={name}
+          {...(cartEnabled ? {} : { style: { objectFit: "cover" } })}
         />
         <h3 className="product-card__name">{name}</h3>
         <p className="product-card__price">{price}</p>
       </Link>
-      <section className="product-card__cart-stock">
+      <section
+        className="product-card__cart-stock"
+        {...(cartEnabled ? {} : { style: { justifyContent: "center" } })}>
         {cartEnabled ? (
           <button className="product-card__add-to-cart">Add to Cart</button>
         ) : (
@@ -41,8 +44,11 @@ export default function ProductCard({
           </Link>
         )}
         {stockEnabled && (
-          <p className="product-card__stock">
-            {stock ? `In stock: ${stock}` : "Out of stock"}
+          <p
+            className={`product-card__stock ${
+              stock <= 0 ? "product-card__stock--out-of-stock" : ""
+            }`}>
+            {stock > 0 ? `In stock: ${stock}` : <>Out of stock: 0</>}
           </p>
         )}
       </section>
