@@ -1,0 +1,20 @@
+@use "./variables" as vars;
+
+.contact-form {
+  &__form-group {
+    input {
+      padding: 10px;
+      background-color: vars.$gray;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+
+    textArea {
+      padding: 10px;
+      background-color: vars.$gray;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: none;
+      resize: none;
+    }
+  }
+}
