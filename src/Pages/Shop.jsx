@@ -1,11 +1,12 @@
 import { useState } from "react";
 import ShopFilter from "../Components/shop_filter/shop_filter";
 import ProductCard from "../Components/product_card/product_card";
-import { useLoaderData } from "react-router";
+import { useLoaderData, useParams } from "react-router";
 import "../Styles/shop.scss";
 
 export default function Shop() {
   const data = useLoaderData();
+  const { searchQuery } = useParams();
   const [filters, setFilters] = useState({
     brands: new Set(),
     colors: new Set(),
@@ -20,6 +21,15 @@ export default function Shop() {
 
   // Filter products based on active filters
   const filteredProducts = allProducts.filter((product) => {
+    // Search filter
+    if (searchQuery) {
+      const query = searchQuery.toLowerCase();
+      const matchesSearch =
+        product.name.toLowerCase().includes(query) ||
+        product.brand.toLowerCase().includes(query);
+      if (!matchesSearch) return false;
+    }
+
     // Filter by brand
     if (filters.brands.size > 0 && !filters.brands.has(product.brand)) {
       return false;
