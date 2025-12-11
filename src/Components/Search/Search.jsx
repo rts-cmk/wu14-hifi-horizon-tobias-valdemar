@@ -16,7 +16,7 @@ export function Search({ searchOpen, toggleSearch }) {
 
   return (
     <>
-      {/* 1. Search Bar for Desktop (hidden on mobile) */}
+      {/* 1. Search Bar for Desktops (hidden on mobile) */}
       <form
         className="navbar__search navbar__search--desktop"
         onSubmit={handleSearch}>
