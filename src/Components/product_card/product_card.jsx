@@ -20,13 +20,15 @@ export default function ProductCard({
           <GiSettingsKnobs />
         </div>
       )}
-      <img
-        className="product-card__image"
-        src={`${API_BASE_URL}/${image}`}
-        alt={name}
-      />
-      <h3 className="product-card__name">{name}</h3>
-      <p className="product-card__price">$ {price}</p>
+      <Link to={`/productdetails/${itemId}`} className="product-card__link">
+        <img
+          className="product-card__image"
+          src={`${API_BASE_URL}/${image}`}
+          alt={name}
+        />
+        <h3 className="product-card__name">{name}</h3>
+        <p className="product-card__price">$ {price}</p>
+      </Link>
       <section className="product-card__cart-stock">
         <button className="product-card__add-to-cart">Add to Cart</button>
         {stockEnabled && (

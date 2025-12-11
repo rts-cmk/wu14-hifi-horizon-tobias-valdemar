@@ -28,6 +28,11 @@
     }
   }
 
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
   &__image {
     width: 100%;
     height: 100px;
