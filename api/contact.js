@@ -2,7 +2,6 @@
 import { Resend } from "resend";
 
 export default async function handler(req, res) {
-  // Only allow POST requests
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
@@ -20,7 +19,7 @@ export default async function handler(req, res) {
 
     // Send email
     const data = await resend.emails.send({
-      from: "HiFi Horizon <onboarding@resend.dev>", // Resend's trial domain
+      from: "HiFi Horizon <onboarding@resend.dev>",
       to: [process.env.RECIPIENT_EMAIL],
       replyTo: email,
       subject: `Contact Form: ${subject}`,

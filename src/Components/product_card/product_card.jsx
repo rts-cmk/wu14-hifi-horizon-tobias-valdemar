@@ -24,7 +24,7 @@ export default function ProductCard({
       <Link to={`/productdetails/${itemId}`} className="product-card__link">
         <img
           className="product-card__image"
-          src={`${API_BASE_URL}/${image}`}
+          src={`/${image}`}
           alt={name}
           {...(cartEnabled ? {} : { style: { objectFit: "cover" } })}
         />

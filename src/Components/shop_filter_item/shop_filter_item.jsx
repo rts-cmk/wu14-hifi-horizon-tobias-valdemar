@@ -184,7 +184,7 @@ export default function ShopFilterItem({
         />
       </summary>
       <div className="filter-item__options">
-        {options.map((option) => (
+        {(options || []).map((option) => (
           <label key={option} className="filter-item__option">
             <div>
               <input

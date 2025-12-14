@@ -1,26 +1,25 @@
 import { useState } from "react";
 import ShopFilter from "../Components/shop_filter/shop_filter";
 import ProductCard from "../Components/product_card/product_card";
-import { useLoaderData, useParams } from "react-router";
+import { useParams, useLoaderData } from "react-router";
 import "../Styles/shop.scss";
 
 export default function Shop() {
-  const data = useLoaderData();
   const { searchQuery } = useParams();
+  const loaderData = useLoaderData();
   const [filters, setFilters] = useState({
     brands: new Set(),
     colors: new Set(),
     categories: new Set(),
-    minPrice: data.priceRange?.min || 0,
-    maxPrice: data.priceRange?.max || Infinity,
+    minPrice: loaderData.priceRange?.min || 0,
+    maxPrice: loaderData.priceRange?.max || Infinity,
   });
 
-  // Get all products from all categories
-  const allProducts =
-    data.AllCategories?.flatMap((cat) => cat.products || []) || [];
+  const loadedProducts = loaderData.loadedProducts || [];
+  const data = loaderData;
 
-  // Filter products based on active filters
-  const filteredProducts = allProducts.filter((product) => {
+  // Filter the loaded products based on active filters
+  const filteredProducts = loadedProducts.filter((product) => {
     // Search filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
