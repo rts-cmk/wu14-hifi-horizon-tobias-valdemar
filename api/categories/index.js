@@ -5,7 +5,7 @@ import Product from "../../models/Product.js";
 // In-memory cache for categories
 let cachedCategories = null;
 let cacheTime = null;
-const CACHE_DURATION = 60000; // 1 minute
+const CACHE_DURATION = 60000;
 
 export default async function handler(req, res) {
   if (req.method !== "GET") {
@@ -13,7 +13,6 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Check cache first
     if (
       cachedCategories &&
       cacheTime &&
@@ -26,7 +25,6 @@ export default async function handler(req, res) {
 
     const categories = await Category.find({}).populate("products").lean();
 
-    // Update cache
     cachedCategories = categories;
     cacheTime = Date.now();
 

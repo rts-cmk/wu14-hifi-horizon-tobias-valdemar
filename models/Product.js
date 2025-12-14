@@ -26,7 +26,7 @@ const ProductSchema = new mongoose.Schema({
   description: String,
   variants: [VariantSchema],
   additional_info: AdditionalInfoSchema,
-  specifications: mongoose.Schema.Types.Mixed, // Flexible object for different product specs
+  specifications: mongoose.Schema.Types.Mixed,
 });
 
 const Product =
