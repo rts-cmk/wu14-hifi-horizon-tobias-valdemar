@@ -8,6 +8,8 @@ export default function Contact() {
     subject: "",
     message: "",
   });
+  const [status, setStatus] = useState({ type: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -16,10 +18,48 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully.",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setStatus({
+          type: "error",
+          message: data.error || "Failed to send message. Please try again.",
+        });
+      }
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message: "An error occurred. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -84,8 +124,18 @@ export default function Contact() {
             />
           </div>
 
-          <button type="submit" className="contact-form__submit">
-            Submit
+          {status.message && (
+            <div
+              className={`contact-form__status contact-form__status--${status.type}`}>
+              {status.message}
+            </div>
+          )}
+
+          <button
+            type="submit"
+            className="contact-form__submit"
+            disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Submit"}
           </button>
         </form>
       </article>
