@@ -8,9 +8,31 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css"
+import { useState } from "react";
 
 export default function ProductDetails() {
     const { product, category } = useLoaderData()
+    const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
+
+    const [quantity, setQuantity] = useState(1);
+
+    const increaseQuantity = () => {
+        setQuantity(prevQuantity => prevQuantity + 1);
+    }
+
+    const decreaseQuantity = () => {
+        setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+    }
+
+    const handleAddToCart = () => {
+        const cartItem = {
+            productId: product.id,
+            variantId: selectedVariant.id,
+            quantity,
+        }
+
+        console.log("Adding to cart:", cartItem);
+    }
 
     // console.log(data);
 
@@ -40,7 +62,7 @@ export default function ProductDetails() {
                             {product.images?.map((img, index) => (
                                 <SwiperSlide key={index}>
                                     <img 
-                                        src={`${API_BASE_URL}/${img}`} 
+                                        src={`${API_BASE_URL}/${selectedVariant.image}`} 
                                         alt={`${product.name} - Image ${index + 1}`}
                                         className="product-details__image"
                                     />
@@ -72,6 +94,11 @@ export default function ProductDetails() {
                         <div className="product-details__variants">
                             {product.variants.map((variant, index) => (
                                 <div key={index} className="product-details__color">
+                                    <span
+                                        className="product-details__color-swatch"
+                                        style={{ background: variant.hex || variant.color }}
+                                        onClick={() => setSelectedVariant(variant)}
+                                    ></span>
                                     <span>{variant.color}</span>
                                 </div>
                             ))}
@@ -81,18 +108,45 @@ export default function ProductDetails() {
                             <span className="product-details__price">€{product.price}</span>
                             <span className="product-details__stock">In Stock: {product.variants[0]?.stock || 0}</span>
                         </div>
+                        <div className="product-details__cart">
+                            <div className="product-details__quantity">
+                                <button 
+                                    className="product-details__quantity-btn"
+                                    onClick={decreaseQuantity}
+                                    aria-label="Decrease quantity"
+                                >
+                                    -
+                                </button>
+
+                                <span className="product-details__quantity-value">{quantity}</span>
+
+                                <button
+                                    className="product-details__quantity-btn"
+                                    onClick={increaseQuantity}
+                                    aria-label="Increase quantity"
+                                >
+                                    +
+                                </button>
+                            </div>
+                            <button
+                                className="product-details__add-to-cart-btn"
+                                onClick={handleAddToCart}
+                            >
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
                 <hr />
 
                 {/* Bottom Side - Product specifications */}
-                <table className="specifications-table">
+                <table className="product-details__specifications-table">
                     <tbody>
                         {Object.entries(product.specifications).map(([key, value]) => (
                             <tr key={key}>
-                                <td className="spec-label">{key.replace(/_/g, " ")}</td>
-                                <td className="spec-value">{value}</td>
+                                <td className="product-details__spec-label">{key.replace(/_/g, " ")}</td>
+                                <td className="product-details__spec-value">{value}</td>
                             </tr>
                         ))}
                     </tbody>
