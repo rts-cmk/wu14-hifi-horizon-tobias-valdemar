@@ -8,6 +8,7 @@ import Contact from "../Contact";
 
 //Loaders
 import { loadShop } from "../../loaders/shop_loader";
+import { loadAboutUs } from "../../loaders/about_loader";
 //FAQ Page
 import FAQ from "../faq";
 import ProductDetails from "../../Components/productDetails/ProductDetails";
@@ -26,6 +27,7 @@ export const router = createBrowserRouter([
       {
         path: "/aboutus",
         element: <AboutUs />,
+        loader: loadAboutUs,
       },
       {
         path: "/shop/:searchQuery?",

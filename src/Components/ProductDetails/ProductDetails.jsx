@@ -7,44 +7,45 @@ import "../ProductDetails/ProductDetails.sass";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-import "swiper/css";
+import "swiper/css"
 
 export default function ProductDetails() {
-  const { product, category } = useLoaderData();
+    const { product, category } = useLoaderData()
 
   // console.log(data);
 
-  return (
-    <div className="product-details">
-      <div className="product-details__layout">
-        <div className="product-details__info-header">
-          {/* Left side */}
-          <div className="product-details__image-slider-container">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              spaceBetween={50}
-              slidesPerView={1}
-              navigation={{
-                nextEl: ".swiper-button-next-custom",
-                prevEl: ".swiper-button-prev-custom",
-              }}
-              pagination={{
-                el: ".swiper-pagination-custom",
-                clickable: true,
-                type: "bullets",
-              }}
-              loop={true}
-              className="product-details__image-slider">
-              {product.images?.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <img
-                    src={`/${img}`}
-                    alt={`${product.name} - Image ${index + 1}`}
-                    className="product-details__image"
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+    return (
+        <div className="product-details">
+            <div className="product-details__layout">
+                <div className="product-details__info-header">
+                    {/* Left side */}
+                    <div className="product-details__image-slider-container">
+                        <Swiper 
+                            modules={[Navigation, Pagination]}
+                            spaceBetween={50}
+                            slidesPerView={1}
+                            navigation={{
+                                nextEl: '.swiper-button-next-custom',
+                                prevEl: '.swiper-button-prev-custom',
+                            }}
+                            pagination={{
+                                el: '.swiper-pagination-custom',
+                                clickable: true,
+                                type: 'bullets',
+                            }}
+                            loop={true}
+                            className="product-details__image-slider"
+                        >
+                            {product.images?.map((img, index) => (
+                                <SwiperSlide key={index}>
+                                    <img 
+                                        src={`${API_BASE_URL}/${img}`} 
+                                        alt={`${product.name} - Image ${index + 1}`}
+                                        className="product-details__image"
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
 
             {/* Custom Navigation Buttons */}
             <div className="swiper-button-prev-custom">
@@ -83,37 +84,35 @@ export default function ProductDetails() {
             <h2>{product.name}</h2>
             <p>{product.description}</p>
 
-            <div className="product-details__variants">
-              {product.variants.map((variant, index) => (
-                <div key={index} className="product-details__color">
-                  <span>{variant.color}</span>
+                        <div className="product-details__variants">
+                            {product.variants.map((variant, index) => (
+                                <div key={index} className="product-details__color">
+                                    <span>{variant.color}</span>
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="product-details__price-stock">
+                            <span className="product-details__price">€{product.price}</span>
+                            <span className="product-details__stock">In Stock: {product.variants[0]?.stock || 0}</span>
+                        </div>
+                    </div>
                 </div>
-              ))}
-            </div>
+                
+                <hr />
 
-            <div className="product-details__price-stock">
-              <span className="product-details__price">€{product.price}</span>
-              <span className="product-details__stock">
-                In Stock: {product.variants[0]?.stock || 0}
-              </span>
+                {/* Bottom Side - Product specifications */}
+                <table className="specifications-table">
+                    <tbody>
+                        {Object.entries(product.specifications).map(([key, value]) => (
+                            <tr key={key}>
+                                <td className="spec-label">{key.replace(/_/g, " ")}</td>
+                                <td className="spec-value">{value}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </div>
-          </div>
         </div>
-
-        <hr />
-
-        {/* Bottom Side - Product specifications */}
-        <table className="specifications-table">
-          <tbody>
-            {Object.entries(product.specifications).map(([key, value]) => (
-              <tr key={key}>
-                <td className="spec-label">{key.replace(/_/g, " ")}</td>
-                <td className="spec-value">{value}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  );
+    )
 }

@@ -5,7 +5,7 @@
     align-items: center
     flex-direction: row
     padding: 4px 8px
-    background-color: vars.$gray 
+    background-color: vars.$gray
     border-radius: 4px
 
     input
@@ -15,15 +15,19 @@
         flex: 1
         font-size: 14px
         background-color: inherit
-        color: vars.$white
-
-.navbar__search-icon
         color: vars.$black
 
+    button
+        background: none
+        border: none
+        cursor: pointer
+
+.navbar__search-icon
+    color: vars.$black
 
 .navbar__search--desktop
     @media (max-width: 600px)
-        display: none 
+        display: none
 
 // Mobile Search Toggle
 .navbar__search-toggle
@@ -45,14 +49,14 @@
     max-height: 0
     overflow: hidden
     transition: max-height 0.3s ease-out, padding 0.3s ease-out
-    
+
     &--open
-        max-height: 60px 
+        max-height: 60px
         padding: 0.5rem 1rem
         transition: max-height 0.3s ease-in, padding 0.3s ease-in
 
     @media (min-width: 601px)
-        display: none 
+        display: none
 
     &-container
         display: flex
