@@ -6,36 +6,44 @@ import "../ProductDetails/ProductDetails.sass"
 // Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-
 import "swiper/css"
+
 import { useState } from "react";
+import { useCartStore } from "../Cart/CartStore";
 
 export default function ProductDetails() {
     const { product, category } = useLoaderData()
-    const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
+    const addItem = useCartStore(state => state.addItem);
 
+    const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
     const [quantity, setQuantity] = useState(1);
 
+    const maxStock = selectedVariant?.stock ?? 0;
+
     const increaseQuantity = () => {
-        setQuantity(prevQuantity => prevQuantity + 1);
+        setQuantity(q => Math.min(q + 1, maxStock));
     }
 
     const decreaseQuantity = () => {
-        setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+        setQuantity(q => Math.max(q - 1, 1));
     }
 
     const handleAddToCart = () => {
-        const cartItem = {
-            productId: product.id,
-            variantId: selectedVariant.id,
-            quantity,
-        }
+        if (maxStock === 0) return
 
-        console.log("Adding to cart:", cartItem);
+        addItem(
+            {
+                id: `${product.id}-${selectedVariant.id}`,
+                productId: product.id,
+                variantId: selectedVariant.id,
+                name: `${product.name} (${selectedVariant.color})`,
+                price: product.price,
+                image: `${API_BASE_URL}/${selectedVariant.image}`,
+                stock: maxStock,
+            },
+            quantity
+        )
     }
-
-    // console.log(data);
-
 
     return (
         <div className="product-details">
@@ -106,13 +114,14 @@ export default function ProductDetails() {
 
                         <div className="product-details__price-stock">
                             <span className="product-details__price">€{product.price}</span>
-                            <span className="product-details__stock">In Stock: {product.variants[0]?.stock || 0}</span>
+                            <span className="product-details__stock">In Stock: {maxStock}</span>
                         </div>
                         <div className="product-details__cart">
                             <div className="product-details__quantity">
                                 <button 
                                     className="product-details__quantity-btn"
                                     onClick={decreaseQuantity}
+                                    disabled={quantity <= 1}
                                     aria-label="Decrease quantity"
                                 >
                                     -
@@ -123,6 +132,7 @@ export default function ProductDetails() {
                                 <button
                                     className="product-details__quantity-btn"
                                     onClick={increaseQuantity}
+                                    disabled={quantity >= maxStock}
                                     aria-label="Increase quantity"
                                 >
                                     +
@@ -131,8 +141,9 @@ export default function ProductDetails() {
                             <button
                                 className="product-details__add-to-cart-btn"
                                 onClick={handleAddToCart}
+                                disabled={maxStock === 0}
                             >
-                                Add to Cart
+                                {maxStock === 0 ? "Out of Stock" : "Add to Cart"}
                             </button>
                         </div>
                     </div>

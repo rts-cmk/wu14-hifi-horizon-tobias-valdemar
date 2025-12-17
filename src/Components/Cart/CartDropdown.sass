@@ -1,0 +1,243 @@
+@use "../../Styles/variables" as vars
+
+.cart-dropdown-container 
+    // Optional: Use this to create the grey overlay effect around the cart
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    justify-content: flex-end; // Assuming the dropdown appears on the right
+    z-index: 1000;
+
+
+.cart-dropdown 
+    width: 400px; // Adjust as needed
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    // To make it look like a floating panel
+    height: 100%; 
+    overflow-y: auto; 
+
+
+// --- Header ---
+.cart-dropdown__header 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    
+    h2 
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #333;
+    
+
+
+.cart-dropdown__close-btn 
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #333;
+    line-height: 1;
+
+
+// --- List Items ---
+.cart-dropdown__list 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+
+
+.cart-dropdown__item 
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee; // Subtle separator between items
+    position: relative; // For positioning the remove 'x'
+
+    &:last-child 
+        border-bottom: none;
+    
+
+
+.cart-dropdown__item-remove 
+    position: absolute;
+    top: 15px; // Align with the top of the item
+    left: 0; 
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #888;
+    line-height: 1;
+    padding: 0;
+
+
+.cart-dropdown__item-content 
+    display: flex;
+    margin-left: 25px; // Space for the remove 'x'
+    align-items: flex-start;
+
+
+.cart-dropdown__item-image 
+    width: 80px; 
+    height: auto;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+
+
+.cart-dropdown__item-details 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 10px;
+
+
+.cart-dropdown__item-name 
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #333;
+
+
+.cart-dropdown__item-stock 
+    font-size: 0.8rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+
+
+.cart-dropdown__item-stock-indicator 
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #28a745; // Green for "In stock"
+    border-radius: 50%;
+    margin-left: 5px;
+
+
+.cart-dropdown__item-price-and-controls 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+
+
+.cart-dropdown__item-total-price 
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+    margin-top: auto; // Push to the bottom
+
+
+// --- Quantity Controls ---
+.cart-dropdown__quantity-controls 
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    
+    button 
+        background: none;
+        border: none;
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #333;
+        line-height: 1;
+        
+        &:disabled 
+            cursor: not-allowed;
+            color: #ccc;
+        
+    
+    
+    input 
+        width: 30px;
+        text-align: center;
+        border: none;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        padding: 5px 0;
+        font-size: 1rem;
+        outline: none;
+        background: #f8f8f8;
+    
+
+
+
+// --- Footer ---
+.cart-dropdown__separator 
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+
+
+.cart-dropdown__footer 
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+.cart-dropdown__subtotal 
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+
+.cart-dropdown__subtotal-label 
+    font-weight: 400;
+    color: #333;
+
+
+.cart-dropdown__subtotal-price 
+    font-weight: 700;
+    color: vars.$button; // Orange color for the final price
+
+
+.cart-dropdown__actions 
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; // Space between the two buttons
+
+
+.cart-dropdown__btn 
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    border-radius: 3px;
+
+
+.cart-dropdown__btn--cart 
+    background-color: vars.$button; 
+    color: white;
+    
+    &:hover 
+        background-color: darken(vars.$button, 10%);
+    
+
+
+.cart-dropdown__btn--payment 
+    background-color: vars.$button; // Same color as the image
+    color: white;
+    
+    &:hover 
+        background-color: darken(vars.$button, 10%);
+    
