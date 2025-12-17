@@ -5,6 +5,8 @@ import { useNavigate } from "react-router"
 import { FaBars, FaSearch, FaTimes } from "react-icons/fa"
 import { MobileSearch, Search } from "../Search/Search"
 
+import CartDropdown from "../Cart/CartDropdown"
+
 export default function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false)
     const [searchOpen, setSearchOpen] = useState(false)
@@ -17,6 +19,7 @@ export default function NavBar() {
         navigate(path)
         setMenuOpen(false)
         setSearchOpen(false)
+        setCartOpen(false)
     }
 
     const toggleSearch = () => {
@@ -73,7 +76,8 @@ export default function NavBar() {
                     <div className="navbar__cart-container">
                         <AiOutlineShoppingCart size={24} className="navbar__cart" />
                     </div>
-
+                    
+                    {dropdownOpen && <CartDropdown />}
 
                     <button
                         className="navbar__menu-toggle"
