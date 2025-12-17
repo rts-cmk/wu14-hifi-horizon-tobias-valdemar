@@ -29,6 +29,15 @@
     &__logo
         margin-left: 1rem
 
+    &__profile-container
+        display: flex
+        justify-content: center
+
+    &__welcome-message
+        position: absolute
+        width: 9rem
+        bottom: 0.5rem
+
     &__links
         display: flex
         gap: 1.5rem
@@ -46,7 +55,7 @@
     &__actions
         display: flex
         gap: 1rem
-    
+
     // Hamburger Menu Styles
     &__menu-toggle
         background: none
@@ -58,7 +67,6 @@
 
         @media (max-width: 600px)
             display: block
-
 
     // Overlay Styles
     &__overlay
@@ -75,9 +83,8 @@
         z-index: 150
 
     &__overlay--visible
-            opacity: 1
-            pointer-events: auto
-
+        opacity: 1
+        pointer-events: auto
 
     // Mobile
     &__mobile-menu
@@ -94,13 +101,13 @@
         flex-direction: column
         cursor: pointer
         background: vars.$black
-        
+
         @media (min-width: 601px)
             display: none
 
     &__mobile-menu--open
         transform: translateX(0)
-    
+
     &__mobile-close
         align-self: flex-end
         background: none
@@ -133,4 +140,3 @@
 
     &__mobile-link-icon
         font-size: 1.5rem
-
