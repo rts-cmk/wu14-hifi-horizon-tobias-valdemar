@@ -6,7 +6,7 @@ export default function QuantityControl({ item }) {
     return (
         <div className="quantity-control">
             <button
-                onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
+                onClick={() => updateQuantity(item.id, item.quantity - 1)}
                 disabled={item.quantity <= 1}
             >
                 -
@@ -15,8 +15,8 @@ export default function QuantityControl({ item }) {
             <span>{item.quantity}</span>
 
             <button
-                onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
-                disabled={item.quantity >= item.product.stock}
+                onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                disabled={item.quantity >= item.stock}
             >
                 +
             </button>

@@ -123,16 +123,6 @@ export default function NavBar() {
         <div className="navbar__actions">
             <Search searchOpen={searchOpen} toggleSearch={toggleSearch} />
 
-            <div className="navbar__cart-container" onClick={toggleCart}>
-                <AiOutlineShoppingCart size={24} className="navbar__cart" />
-
-                {totalItems > 0 && (
-                    <span className="navbar__cart-badge">{totalItems()}</span>
-                )}
-            </div>
-
-            {cartOpen && <CartDropdown />}
-
             <div className="navbar__profile-container">
                 <AiOutlineUser size={24} className="navbar__profile" />
                 {getFirstName() ? (
@@ -143,10 +133,16 @@ export default function NavBar() {
                 <span></span>
                 )}
             </div>
-
-            <div className="navbar__cart-container">
+            
+            <div className="navbar__cart-container" onClick={toggleCart}>
                 <AiOutlineShoppingCart size={24} className="navbar__cart" />
+
+                {totalItems > 0 && (
+                    <span className="navbar__cart-badge">{totalItems()}</span>
+                )}
             </div>
+
+            {cartOpen && <CartDropdown />}
 
             <button
                 className="navbar__menu-toggle"
