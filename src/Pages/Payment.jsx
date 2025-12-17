@@ -1,3 +1,9 @@
+import CheckoutStepper from "../Components/CheckoutStepper/CheckoutStepper";
+
 export default function Payment() {
-  return <div>Payment Page</div>;
+  return (
+    <>
+      <CheckoutStepper />
+    </>
+  )
 }

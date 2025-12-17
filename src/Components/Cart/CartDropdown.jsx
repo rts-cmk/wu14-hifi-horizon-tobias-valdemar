@@ -1,12 +1,25 @@
 import { useCartStore } from "./CartStore";
 import QuantityControl from "./QuantityControl";
 import "../Cart/CartDropdown.sass"
+import { useNavigate } from "react-router";
+import { useRef } from "react";
 
 export default function CartDropdown({ id }) {
     const items = useCartStore(state => state.items);
     const totalPrice = useCartStore(state => state.totalPrice())
     const totalItemsCount = useCartStore(state => state.totalItems());
+    const updateQuantity = useCartStore(state => state.updateQuantity);
     const clearCart = useCartStore(state => state.clearCart);
+
+    const navigate = useNavigate()
+    const popoverRef = useRef(null)
+
+    const handleNavigation = (path) => {
+        if (popoverRef.current) {
+            popoverRef.current.hidePopover()
+        }
+        navigate(path)
+    }
 
     if (items.length === 0) {
         return <p>Your cart is empty</p>
@@ -21,7 +34,7 @@ export default function CartDropdown({ id }) {
             <div className="cart-dropdown__list">
                 {items.map(item => (
                     <div key={item.id} className="cart-dropdown__item">
-                        <button className="cart-dropdown__remove">x</button>
+                        <button className="cart-dropdown__remove" onClick={() => updateQuantity(item.id, 0)}>x</button>
 
                         <div className="cart-dropdown__item-content">
                             <img src={item.image} alt={item.name} className="cart-dropdown__img" />
@@ -46,8 +59,8 @@ export default function CartDropdown({ id }) {
                 </div>
             </div>
             <div className="cart-dropdown__actions">
-                <button className="btn-primary">Go to cart</button>
-                <button className="btn-secondary">Go to payment</button>
+                <button className="btn-primary" onClick={() => handleNavigation("/cart")}>Go to cart</button>
+                <button className="btn-secondary" onClick={() => handleNavigation("/payment")}>Go to payment</button>
             </div>
         </div>
     )
