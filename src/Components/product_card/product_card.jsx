@@ -14,22 +14,24 @@ export default function ProductCard({
   stockEnabled,
   cartEnabled,
 }) {
-
   const addItem = useCartStore((state) => state.addItem);
 
   const handleAddToCart = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     if (stock <= 0) return;
 
-    addItem({
-      id: itemId,
-      productId: itemId,
-      name: name,
-      price: price,
-      image: `${API_BASE_URL}/${image}`,
-      stock: stock,
-    }, 1)
-  }
+    addItem(
+      {
+        id: itemId,
+        productId: itemId,
+        name: name,
+        price: price,
+        image: `${API_BASE_URL}/${image}`,
+        stock: stock,
+      },
+      1
+    );
+  };
 
   return (
     <article className="product-card">
@@ -53,7 +55,15 @@ export default function ProductCard({
         className="product-card__cart-stock"
         {...(cartEnabled ? {} : { style: { justifyContent: "center" } })}>
         {cartEnabled ? (
-          <button className="product-card__add-to-cart" onClick={handleAddToCart}>Add to Cart</button>
+          stock > 0 ? (
+            <button
+              className="product-card__add-to-cart"
+              onClick={handleAddToCart}>
+              Add to Cart
+            </button>
+          ) : (
+            <p className="product-card__out-of-stock">Out of Stock</p>
+          )
         ) : (
           <Link
             to={`/productdetails/${itemId}`}
