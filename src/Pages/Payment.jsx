@@ -34,14 +34,49 @@ export default function Payment() {
         </div>
 
         <div className="payment-page__right">
-          <h2>Order Summary</h2>
-          <div className="payment-page__order-items">
-            {items.map((item) => (
-              <div key={item.id} className="payment-page__order-item">
-                <span>{item.name} x {item.quantity}</span>
-                <span>€{(item.price * item.quantity).toFixed(2)}</span>
-              </div>
-            ))}
+          <div className="payment-page__overview">
+            <h2>Payment overview</h2>
+            <ul className="payment-page__order-items-list">
+              {items.map((item) => (
+                <li key={item.id} className="payment-page__order-item">
+                  <span>{item.name} x {item.quantity}</span>
+                  <span>€{(item.price * item.quantity).toFixed(2)}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="payment-page__total-row">
+              <span>Price</span>
+              <strong>€ {totalPrice.toFixed(2)}</strong>
+            </div>
+
+            <hr className="payment-page__divider" />
+
+            <div className="payment-page__extra-costs">
+                <div className="payment-page__cost-row">
+                  <span>Delivery price</span>
+                  <span>€ 4.00</span>
+                </div>
+                <div className="payment-page__cost-row">
+                  <span>VAT</span>
+                  <span>€ {(totalPrice * 0.2).toFixed(2)}</span>
+                </div>
+            </div>
+
+            <div className="payment-page__total-row">
+              <span>Total</span>
+              <strong>€ {totalPrice.toFixed(2)}</strong>
+            </div>
+          </div>
+
+          <div className="payment-page__checkout-actions">
+          <label>
+            <input type="checkbox" /> Subscribe to newsletter
+          </label>
+          <label>
+            <input type="checkbox" /> I accept the terms of trade <strong>(read in new window)</strong>
+          </label>
+          <button className="payment-page__checkout-btn">Checkout</button>
           </div>
         </div>
       </div>
