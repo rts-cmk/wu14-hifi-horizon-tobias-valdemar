@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuthStore } from "../../stores/authStore";
 import "../NavBar/NavBar.sass";
 import {
@@ -14,17 +14,35 @@ import { MobileSearch, Search } from "../Search/Search";
 
 import { useCartStore } from "../Cart/CartStore";
 import CartDropdown from "../Cart/CartDropdown";
+import ShopDropdown from "../shop_dropdown/shop_dropdown";
+import { API_BASE_URL } from "../../config/api";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
+  const [shopOpen, setShopOpen] = useState(false);
   const [active, setActive] = useState("home");
+  const [categories, setCategories] = useState([]);
 
   const currentUser = useAuthStore((state) => state.currentUser);
   const navigate = useNavigate();
 
   const totalItems = useCartStore((state) => state.totalItems);
+
+  // Fetch categories for dropdown
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/categories`);
+        const data = await response.json();
+        setCategories(data.map((cat) => cat.name));
+      } catch (error) {
+        console.error("Failed to load categories:", error);
+      }
+    };
+    fetchCategories();
+  }, []);
 
   // Get first name from full name
   const getFirstName = () => {
@@ -44,11 +62,20 @@ export default function NavBar() {
     setCartOpen((prev) => !prev);
     setSearchOpen(false);
     setMenuOpen(false);
+    setShopOpen(false);
   };
 
   const toggleSearch = () => {
     setSearchOpen((prev) => !prev);
     setCartOpen(false);
+    setShopOpen(false);
+  };
+
+  const toggleShop = () => {
+    setShopOpen((prev) => !prev);
+    setCartOpen(false);
+    setSearchOpen(false);
+    setMenuOpen(false);
   };
 
   const links = [
@@ -112,11 +139,31 @@ export default function NavBar() {
                 className={`navbar__link ${
                   active === id ? "navbar__link--active" : ""
                 }`}
-                onClick={() => handleNavigate(path, id)}>
-                {label}
+                onClick={() =>
+                  id === "shop" ? toggleShop() : handleNavigate(path, id)
+                }>
+                {id === "shop" ? (
+                  <button
+                    id="shop-anchor"
+                    popoverTarget="shop-popover"
+                    className="navbar__shop-button"
+                    aria-label="Shop">
+                    {label}
+                  </button>
+                ) : (
+                  label
+                )}
               </li>
             ))}
           </ul>
+          <ShopDropdown
+            id="shop-popover"
+            categories={categories}
+            onSelectCategory={(category) => {
+              navigate(`/shop?category=${category}`);
+              document.getElementById("shop-popover")?.hidePopover();
+            }}
+          />
         </div>
 
         {/* Actions (Search, Profile, Cart) */}

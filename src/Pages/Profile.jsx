@@ -55,17 +55,33 @@ export default function Profile() {
             currentUser.address2 ? `, ${currentUser.address2}` : ""
           }\n${currentUser.zipcode} ${currentUser.city}\n${currentUser.country}`
         : "Not set",
+      isAddress: true,
     },
   ];
+
+  const [addressData, setAddressData] = useState({
+    address: "",
+    address2: "",
+    zipcode: "",
+    city: "",
+    country: "",
+  });
 
   const handleEdit = (field) => {
     setEditingField(field.label);
 
     if (field.label === "Password") {
-      // Get password from accounts array
       const accounts = useAuthStore.getState().accounts;
       const account = accounts.find((acc) => acc.id === currentUser.id);
       setEditValue(account?.password || "");
+    } else if (field.label === "Address") {
+      setAddressData({
+        address: currentUser?.address || "",
+        address2: currentUser?.address2 || "",
+        zipcode: currentUser?.zipcode || "",
+        city: currentUser?.city || "",
+        country: currentUser?.country || "",
+      });
     } else {
       setEditValue(field.value === "Not set" ? "" : field.value);
     }
@@ -77,18 +93,10 @@ export default function Profile() {
       "Phone number": "phone",
       Mail: "email",
       Password: "password",
-      Address: "address",
     };
 
     if (editingField === "Address") {
-      const [address, zipCity, country] = editValue.split("\n");
-      const [zipcode, ...cityParts] = (zipCity || "").split(" ");
-      updateUser({
-        address: address || "",
-        zipcode: zipcode || "",
-        city: cityParts.join(" ") || "",
-        country: country || "",
-      });
+      updateUser(addressData);
     } else {
       const key = fieldMap[editingField];
       updateUser({ [key]: editValue });
@@ -143,12 +151,79 @@ export default function Profile() {
                   <div className="profile-field__content">
                     <span className="profile-field__label">{field.label}</span>
                     {editingField === field.label ? (
-                      <textarea
-                        className="profile-field__input"
-                        value={editValue}
-                        onChange={(e) => setEditValue(e.target.value)}
-                        rows={field.label === "Address" ? 3 : 1}
-                      />
+                      field.isAddress ? (
+                        <div className="profile-field__address-inputs">
+                          <input
+                            type="text"
+                            placeholder="Address"
+                            value={addressData.address}
+                            onChange={(e) =>
+                              setAddressData({
+                                ...addressData,
+                                address: e.target.value,
+                              })
+                            }
+                            className="profile-field__input"
+                          />
+                          <input
+                            type="text"
+                            placeholder="Address 2 (optional)"
+                            value={addressData.address2}
+                            onChange={(e) =>
+                              setAddressData({
+                                ...addressData,
+                                address2: e.target.value,
+                              })
+                            }
+                            className="profile-field__input"
+                          />
+                          <div className="profile-field__row">
+                            <input
+                              type="text"
+                              placeholder="Zipcode"
+                              value={addressData.zipcode}
+                              onChange={(e) =>
+                                setAddressData({
+                                  ...addressData,
+                                  zipcode: e.target.value,
+                                })
+                              }
+                              className="profile-field__input"
+                            />
+                            <input
+                              type="text"
+                              placeholder="City"
+                              value={addressData.city}
+                              onChange={(e) =>
+                                setAddressData({
+                                  ...addressData,
+                                  city: e.target.value,
+                                })
+                              }
+                              className="profile-field__input"
+                            />
+                          </div>
+                          <input
+                            type="text"
+                            placeholder="Country"
+                            value={addressData.country}
+                            onChange={(e) =>
+                              setAddressData({
+                                ...addressData,
+                                country: e.target.value,
+                              })
+                            }
+                            className="profile-field__input"
+                          />
+                        </div>
+                      ) : (
+                        <textarea
+                          className="profile-field__input"
+                          value={editValue}
+                          onChange={(e) => setEditValue(e.target.value)}
+                          rows={1}
+                        />
+                      )
                     ) : (
                       <span className="profile-field__value">
                         {field.value.split("\n").map((line, i) => (
