@@ -1,0 +1,370 @@
+@use "../../Styles/_variables.sass" as vars;
+
+// Chat Bot Container
+.chat-bot {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+}
+
+// Chat Bubble (Circle Button)
+.chat-bubble {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: vars.$white;
+  border: none;
+  color: vars.$white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px vars.$button;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+  }
+
+  &.quit {
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  svg {
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+
+    path {
+      fill: vars.$button;
+    }
+  }
+}
+
+// Chat Window
+.chat-window {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 380px;
+  height: 500px;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: calc(100vw - 32px);
+    height: calc(100vh - 120px);
+    bottom: 70px;
+    right: -8px;
+  }
+
+  // Header
+  &__header {
+    background: vars.$h1-color;
+    color: vars.$white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__bot-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__bot-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__bot-status {
+    font-size: 12px;
+    opacity: 0.9;
+  }
+
+  &__close-button {
+    background: none;
+    border: none;
+    color: vars.$white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  // Messages
+  &__messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: vars.$background;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #cbd5e0;
+      border-radius: 3px;
+    }
+  }
+
+  &__message {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    &--bot {
+      justify-content: flex-start;
+
+      .chat-window__message-bubble {
+        background: white;
+        color: #2d3748;
+        border-bottom-left-radius: 0px;
+      }
+    }
+
+    &--user {
+      justify-content: flex-end;
+
+      .chat-window__message-bubble {
+        background: vars.$button;
+        color: white;
+        border-bottom-right-radius: 0px;
+      }
+
+      .chat-window__message-avatar {
+        display: none;
+      }
+    }
+  }
+
+  &__message-bubble {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    word-wrap: break-word;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  &__message-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  // Form
+  &__form {
+    background: vars.$white;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  &__input-area {
+    display: flex;
+    gap: 8px;
+    padding: 12px 16px 0;
+    align-items: center;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    height: 40px;
+
+    &:focus {
+      border-color: #667eea;
+    }
+
+    &::placeholder {
+      color: #a0aec0;
+    }
+  }
+
+  &__button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    background-color: vars.$white;
+
+    &--attachment,
+    &--emoji {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      color: vars.$h1-color;
+
+      &:hover {
+        background: #e2e8f0;
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+
+      svg {
+        font-size: 20px;
+      }
+    }
+
+    &--send {
+      width: 100%;
+      height: 4rem;
+      background: vars.$button;
+      color: white;
+      border-radius: 0;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+      p {
+        margin: 0;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+
+  // Emoji Picker
+  &__emoji-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 16px;
+    border-top: 1px solid #e2e8f0;
+    animation: slideDown 0.2s ease;
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        max-height: 0;
+      }
+      to {
+        opacity: 1;
+        max-height: 200px;
+      }
+    }
+  }
+
+  &__emoji {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      transform: scale(1.2);
+      background: #e2e8f0;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

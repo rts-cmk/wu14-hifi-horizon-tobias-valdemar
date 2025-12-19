@@ -5,7 +5,7 @@
     height: auto
 
 .swiper-button-prev-custom,
-.swiper-button-next-custom 
+.swiper-button-next-custom
     position: absolute
     top: 50%
     transform: translateY(-50%)
@@ -23,7 +23,6 @@
 
 .swiper-button-next-custom
     right: -20px
-
 
 // Bullets
 .swiper-pagination-custom
@@ -53,14 +52,14 @@
         &-active
             background: #D2D2D2
             opacity: 1
- 
+
 .product-details
     padding: vars.$default-padding-top-bottom vars.$default-padding-sides
 
     &__info-header
         display: flex
         flex-direction: row
-        gap: 10rem
+        gap: clamp(0rem, 2rem, 2.5rem)
         margin-bottom: 1rem
 
         @media (max-width: 1024px)
@@ -103,7 +102,6 @@
         border-radius: 50%
         border: 2px solid vars.$black
 
-
     // Right side
     &__details__info
         max-width: 600px
@@ -113,19 +111,19 @@
             font-size: 2rem
             font-weight: 700
             margin-bottom: 0.3rem
-        
-        p   
+
+        p
             font-size: 1rem
             line-height: 1.6
             margin-bottom: 1.5rem
             color: vars.$black
-    
+
     &__price-stock
         display: flex
         justify-content: space-between
         align-items: center
         margin: 1.5rem 0
-    
+
     &__price
         font-size: 2rem
 
@@ -145,7 +143,6 @@
             background-color: green
             display: inline-block
 
-    
     // Buttons
     &__cart
         display: flex
@@ -194,11 +191,11 @@
         border-collapse: collapse
         margin-top: 2rem
 
-        tr 
+        tr
             background: vars.$gray
             &:nth-child(even)
                 background: vars.$white
-        
+
         td
             padding: 12px 15px
             border: 1px solid vars.$black
@@ -212,6 +209,3 @@
     &__spec-value
         width: 60%
         text-align: left
-
-                
-
