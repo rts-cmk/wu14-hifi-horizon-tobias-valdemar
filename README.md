@@ -1,146 +1,163 @@
-# **Projektopgave HI-FI Horizon**
+# Hi-Fi E-Commerce Project
 
-## Om opgaven
-Denne opgave omhandler opsætning, navigation og hentning af data. Læs hele opgavebeskrivelsen grundigt igennem inden I stiller spørgsmål.
+## Overview
 
-## Opgavebeskrivelse
+An e-commerce website for audio/electronics products, built with React and a custom API backend. Inspired by Hi-Fi Klubben, the site features a complete shopping experience with product browsing, cart management, and user authentication.
 
-I skal fremstille en webapplikation til en HI-FI webbutik, som præsenterer butikkens produkter inddelt efter kategori eller producent. Brugeren af sitet skal nemt og overskueligt kunne finde rundt i de forskellige produkter og kunne fremsøge produkter vha. søgeord. Der er **udelukkende** tale om præsentation af produkterne, man skal ikke kunne handle produkter på siden.
+## Tech Stack
 
-Opgaven varer ca. 2-2.5 uger og omhandler både planlægningen og produktionen af client-side produktet. Opgaven skal planlægges, der skal udarbejdes designanalyse (identifikation af komponenter/moduler). <strike>Der skal udarbejdes user-stories til de enkelte komponenter. I skal samarbejde om projektet digitalt (eksempelvis ved hjælp af GitHub Projects), men det er også et krav, at I undervejs i processen vedligeholder et fysisk kanban-board, som kan bruges fx. ved de daglige scrum-møder.</strike>
+- **Frontend**: React 19, React Router v7, Vite
+- **State Management**: Zustand (user auth & cart)
+- **Styling**: SCSS/Sass
+- **API**: JSON Server hosted on Render
+- **Email**: Vercel Serverless Functions + Resend
+- **UI Libraries**:
+  - React Icons
+  - Swiper (product carousel)
+  - React Range (price filters)
+  - DOMPurify (HTML sanitization)
+  - React Router Hash Link (smooth scrolling)
 
-<strike>Der er afsat to dage til den indledende planlægning, hvorefter selve udførelsen af produktet afvikles i to sprints af cirka en uges varighed. I skal afholde et sprint-planning møde med jeres lærer forud for hvert sprint, ligesom der skal være et sprint-review af hvert sprint med jeres lærer.</strike>
+## Features
 
-Det arbejde der forventes udført når projektet er slut, er en funktionel offentlig tilgængelig (github pages eller lignende) client-side som henter data og billeder fra en (eller flere) JSON-datakilde(r). Applikationen skal være sat op, så den matcher det udleverede design.
+- Product catalog organized by categories (amplifiers, speakers, headphones, etc.)
+- Product detail pages with image galleries and specifications
+- Color variant selection with stock tracking
+- Price range filtering
+- User authentication
+- Shopping cart with add/remove functionality
+- Discount pricing display
+- Contact form with email integration
+- Smooth scrolling navigation
+- Responsive design
 
-Et HI-FI produkt består af et navn, en beskrivelse, en pris, et billede, samt hører til i en kategori og er knyttet til en producent. I skal selv udtænke hvordan datastrukturen stilles op i JSON.
-*(billederne findes i den medfølgende .zip fil, men ved alle de andre produktdata finder I selv på noget, benyt evt https://lipsum.com/feed/html )*
+## Data Structure
 
-### Tekniske krav
-**Client-Side** skal løses vha. HTML, CSS og Javascript(React.js), som ved hjælp af fetch-api'et henter data fra en eller flere JSON filer. Jeres CSS skal være modulær, og overholde BEM konventionen, <strike>samt principperne i SMACSS.</strike> Produktet kan designes efter mobile first princippet, men ikke nødvendigvis implementeret til begge medier *(prioriter browser varianten som den primære der produceres)*.
+The API serves a categories array, where each category contains multiple products:
 
+```json
+{
+  "id": 1,
+  "name": "amplifiers",
+  "products": [
+    {
+      "id": 1,
+      "name": "Creek Audio A50i Integrated Amplifier",
+      "price": 899.99,
+      "discount_price": 799.99,
+      "image": "creek_a50I.jpg",
+      "brand": "Creek",
+      "description": "...",
+      "variants": [
+        {
+          "color": "Silver",
+          "hex": "#b8b8b8",
+          "stock": 0,
+          "image": "creek_a50I.jpg"
+        }
+      ],
+      "additional_info": {
+        "manufacturer": "Creek Audio",
+        "warranty": "2 years",
+        "delivery_time": "3-5 business days",
+        ...
+      },
+      "specifications": {
+        "power_output": "50W per channel",
+        "frequency_response": "20Hz - 20kHz",
+        ...
+      },
+      "images": ["creek_a50I.jpg", ...]
+    }
+  ]
+}
+```
 
-### Planlægning
-* Layoutanalyse - identificer komponenter/moduler(BEM blokke) i layoutet. <strike>Husk at analysere indefra og ud.</strike>
-* <strike>User stories - skriv user stories til alle komponenter.</strike>
-* <strike>Udarbejd 'definition of done' på de enkelte user-stories. Hvilke kriterier skal komponentet/modulet opfylde for at være færdigt? Hvad skal den som laver review kontrollere om er i orden?</strike>
-* <strike>SPRINT PLANNING (husk at invitere jeres lærer) Prioriter jeres user-stories og estimer dem, i vælger at arbejde med i det første sprint (planning poker)</strike>
+**Key features:**
 
-### Forslag til arbejdsprocess
-* Opsæt HTML sider med navigation og dummy-data (statisk site)
-* Design datastrukturer i JSON. (en test-fil med tre eller fire produkter som kan bruges i udviklingsfasen)
-* Programmér funktioner til dataudtræk
-* Byg alle nødvendige fetch, og udskriv data fra fetch.
-* Opret datafiler (JSON)
-* Dokumentér kode og funktionalitet i markdown-filer 
+- Products support color variants with stock tracking
+- Discount pricing for sales
+- Detailed specifications for technical products
+- Multiple product images for gallery view
+- Additional info for delivery and warranty details
 
+## Project Structure
 
-### Sider og indhold
-* Forside
-* Brand-liste
-* Shop-kategorier
-* Kategori-liste
-* Enkelt produktvisning
- 
-### Forsiden 
-* Forsidetekst og billeder af produkter
-* Visning af ét eller flere udvalgte produkter (kan være de senest oprettede, et tilfældigt produkt eller andet du finder relevant)
- 
-### Produktsider
-Der er flere forskellige funktioner under produkter:
-* Visning af alle produkter inden for en bestemt kategori, uden produkt beskrivelse
-* Visning af alle produkter der hører til en bestemt producent, uden produkt beskrivelse
-* Visning af ét produkt ved klik på et produkt fra listerne
-* Visning af produkter efter søgning 
+```
+├── api/                   # API configuration
+├── design/                # Design files and assets
+├── public/                # Static assets
+├── src/
+│   ├── Components/        # Reusable UI components
+│   ├── Pages/             # Main page components
+│   ├── Styles/            # Global SCSS/Sass styles
+│   ├── Fonts/             # Custom fonts (Museo Sans)
+│   ├── config/            # Configuration files
+│   ├── loaders/           # React Router loaders
+│   ├── stores/            # Zustand stores (auth, cart)
+│   ├── App.jsx            # Main app component with router
+│   └── main.jsx           # Application entry point
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-Alle produkter hentes via et "API"(JSON) og udskrives med fetch, alle produkter vises med deres billede.
- 
-### Alle sider 
-* Menu 
-* Fritekst-søgefunktion til produkter og producenter (visning på produktsiden) 
-* Footer med kontaktinfo 
+## Key Implementation Details
 
-### Github
-* <strike>Projektet opsættes i et GitHub repo - husk at invitere din lærer som collaborator.</strike>
-* Projektet accepteres som en GitHub assignment.
-* Der skal *committes ved væsentlige ændringer eller færdiggørelse af en funktionalitet* - og altid inden fyraften.
-* Alle commit tekster på GitHub skal kort beskrive ændringerne. **Der må ikke skrives ligegyldige beskrivelser!**.
+### Data Loading
 
-### Billedfiler
-Alle billeder ligger i en zippet fil fordelt i mapper.
+- **React Router Loaders**: Fetch category and product data before rendering pages
+- Images and JSON data served from Render API endpoint
+- Loaders ensure data is available before component mounts
 
-I vælger om alle billeder skal ligge i én mappe eller om I vil bevare mappestrukturen.
+### State Management
 
-Brug følgende liste, hvis I er i tvivl om hvilke kategorier de forskellige billeder tilhører:
+- **Zustand Auth Store**: Manages user login state and authentication
+- **Zustand Cart Store**: Handles add/remove items, quantity updates, and cart total calculations
 
-  
-**CD Afspillere**
+### Contact Form
 
-    * creek_classic_cd.jpg
-    * creek_Destiny_CD.jpg
-    * creek_evo_cd.jpg
-    * Exp_2010S_CD.gif
+- Form submission handled via Vercel Serverless Function
+- Emails sent using Resend API
+- Server-side validation and error handling
+- DOMPurify used for sanitizing form inputs
 
+### Product Features
 
-**DVD Afspillere**
+- **Swiper Carousels**: Product image galleries
+- **React Range**: Price filter sliders for product filtering
+- **Color Variants**: Users can select different color variants with stock tracking
+- **Hash Link Navigation**: Smooth scrolling to sections using react-router-hash-link
 
-    * creek_classic.jpg
-    * exposure_2010S.jpg
-    * parasound_d200.jpg
-    * parasound_halod3.jpg
+## Installation & Setup
 
-**Effektforstærkere**
+```bash
+# Install dependencies
+npm install
 
-    * manley_mahi.jpg
-    * manley_neoclassic300b.jpg
-    * manley_snapper.jpg
-    * parasound_haloa23.jpg
+# Start development server
+npm run dev
 
+# Build for production
+npm run build
 
-**Forforstærkere**
+# Preview production build
+npm run preview
+```
 
-    * Creek_OBH_22_Passive_Preamp.jpg
-    * parasound_classic7100.jpg
-    * parasound_halop3.jpg
-    * Project_prebox.jpg
+## API Endpoint
 
+The API is hosted on Render and serves:
 
-**Højtalere**
+- `/categories` - All product categories with nested products
+- Product images stored and served from Render
 
-    * boesendorfer_vcs_wall.gif
-    * epos_m5.gif
-    * harbeth_hl7es2.jpg
-    * harbeth_monitor30.jpg
-    * harbeth_p3es2.jpg
+## Environment Variables
 
+```
+VITE_API_URL=https://hi-fi-db.onrender.com/categories
+```
 
-**Int. Forstærkere**
+---
 
-    * creek_a50I.jpg
-    * creek_classic5350SE.jpg
-    * creek_destinyamp.jpg
-    * manley_snapper.jpg
-    * Manley_Stingray.jpg
-
-
-**Pladespillere**
-
-    * Pro_ject_Debut_3_bl.jpg
-    * Pro_ject_Debut_III_red_1.jpg
-    * Pro_ject_Debut_III_yellow_1.jpg
-    * Pro_ject_rpm_5.jpg
-    * Pro_ject_rpm10.jpg
-
-
-**Rørforstærkere**
-
-    * jolida_JD102b.jpg
-    * jolida_JD202a.jpg
-    * jolida_JD300b.jpg
-    * jolida_JD302b.jpg
-    * jolida_JD502b.jpg 
- 
-## EKSTRAOPGAVE
-Hvis I er hurtigt færdige!
-
-Indsæt reklmebannere på hjemmesiden. Du skal selv beslutte hvor på siden reklamebannere vil passe ind. Find et API på nettet, som lader dig fetche bannere og indsæt vilkårlige bannere på hjemmesiden.
+**Developed by Tobias and Valdemar - 2025**
